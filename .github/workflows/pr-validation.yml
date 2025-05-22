@@ -36,19 +36,22 @@ jobs:
       - name: Fetch & smoke-test remote cpak.json
         if: steps.changes.outputs.files != ''
         run: |
+          set -euo pipefail
           for f in ${{ steps.changes.outputs.files }}; do
             base=${f#categories/*/}
             base=${base%/manifest.json}
             origin=${base//github\/com/github.com}
-            repo_path=${base#github/com/}
+            repo_path=${origin#github.com/}
+      
             ref=$(jq -r '.branch // .commit // .release' "$f")
             url="https://raw.githubusercontent.com/${repo_path}/${ref}/cpak.json"
+      
             echo "→ Fetching remote cpak.json: $url"
             curl -sfSL "$url" -o remote.json
             echo "→ Validating remote JSON syntax"
             jq empty remote.json
           done
-
+        
       - name: Test install of added cpak
         if: steps.changes.outputs.files != ''
         run: |
@@ -91,6 +94,5 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ❌ PR validation failed.
-            Please check the [logs](${{ github.server_url }}/
-            ${{ github.repository }}/actions/runs/${{ github.run_id }})
+            Please check the [logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
             for details.

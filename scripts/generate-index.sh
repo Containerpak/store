@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Debug mode
 DEBUG=${DEBUG:-false}
 log_debug() {
     if [[ "$DEBUG" == "true" ]]; then
@@ -30,7 +29,9 @@ fi
 
 [[ -d $ROOT ]] || { echo "❌  category '$CATEGORY' not found" >&2; exit 1; }
 
-mapfile -t manifests < <(git ls-files -- ':glob:'"$ROOT"'/**/manifest.json')
+mapfile -t manifests < <(
+    git ls-files -- ':(glob)'"$ROOT"'/**/manifest.json'
+)
 
 if [[ ${#manifests[@]} -eq 0 ]]; then
     echo "⚠️  no manifest.json under $ROOT" >&2
