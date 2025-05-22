@@ -83,11 +83,12 @@ Each store repo should use this layout:
 
 ```
 root/
-├── Music/
-│   ├── github/com/org1/app1/manifest.json
-│   │   ├── github/com/org2/app2/manifest.json
-│   │   └── index.json
-│   └── ...
+├── categories/
+├──── Music/
+│     ├── github/com/org1/app1/manifest.json
+│     │   ├── github/com/org2/app2/manifest.json
+│     ├── index.json
+│     └── ...
 ├── index.json
 └── timestamp.json
 ```
