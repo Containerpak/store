@@ -8,8 +8,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Download cpak binary
         run: |
@@ -38,20 +37,14 @@ jobs:
         if: steps.changes.outputs.files != ''
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
-            # strip "categories/<Cat>/"
             base=${f#categories/*/}
-            # strip "/manifest.json"
             base=${base%/manifest.json}
-            # convert github/com/... → github.com/...
             origin=${base//github\/com/github.com}
-
-            # pick the single version field
+            repo_path=${base#github/com/}
             ref=$(jq -r '.branch // .commit // .release' "$f")
-
-            url="https://raw.githubusercontent.com/${origin}/${ref}/cpak.json"
+            url="https://raw.githubusercontent.com/${repo_path}/${ref}/cpak.json"
             echo "→ Fetching remote cpak.json: $url"
-            curl -sSL "$url" -o remote.json
-
+            curl -sfSL "$url" -o remote.json
             echo "→ Validating remote JSON syntax"
             jq empty remote.json
           done
