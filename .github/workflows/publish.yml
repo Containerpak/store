@@ -53,11 +53,10 @@ jobs:
             🏗️ Publishing index for category: `${{ steps.set-cat.outputs.cat }}`
             Please wait...
 
-      - name: "Publish Category"
+      - name: "Generate timestamp"
         env:
           CAT: ${{ steps.set-cat.outputs.cat }}
         run: |
-          echo "→ Regenerating index for category: $CAT"
           set -euo pipefail
           
           echo "→ Generating timestamp.json"
@@ -66,7 +65,11 @@ jobs:
           {"timestamp":"$now"}
           EOF
 
-          echo "→ Generating index.json"
+      - name: "Generate categories indeces"
+        env:
+          CAT: ${{ steps.set-cat.outputs.cat }}
+        run: |
+          set -euo pipefail
           DEBUG=${DEBUG:-false}
           log_debug() {
               if [[ "$DEBUG" == "true" ]]; then
@@ -112,9 +115,61 @@ jobs:
           printf '%s\n' "${origins[@]}" | sort -u | jq -Rsc 'split("\n")[:-1]' > "$OUT"
           echo "✅  Written $((${#origins[@]})) rows to $OUT"
 
-          # Generate a tree of the directory
-          echo "📂 Directory tree under $ROOT:"
-          tree "$ROOT"
+      - name: "Generate root index"
+        env:
+          CAT: ${{ steps.set-cat.outputs.cat }}
+        run: |
+          set -euo pipefail
+          ROOT_DIR="$(git rev-parse --show-toplevel)"
+          DEFAULT_REF="${DEFAULT_REF:-main}"
+          RAW_BASE="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}"
+
+          tmpfile="$(mktemp)"
+          jq_objects=()
+
+          for catdir in "${ROOT_DIR}"/categories/*/ ; do
+            [[ -d "$catdir" ]] || continue
+            CATEGORY=$(basename "$catdir")
+
+            while IFS= read -r -d '' mf ; do
+              rel_path=${mf#"$ROOT_DIR/"}
+              origin=${rel_path#categories/*/}
+              origin=${origin%/manifest.json}
+              origin=${origin//github\/com/github.com}
+
+              # campi dal manifest
+              read -r name description branch commit release < <(
+                jq -r '.name, .description,
+                        (.branch // ""),
+                        (.commit  // ""),
+                        (.release // "")' "$mf"
+              )
+              version=${branch:-${commit:-${release:-""}}}
+
+              manifest_url="${RAW_BASE}/${DEFAULT_REF}/${rel_path}"
+
+              jq_objects+=("{
+                \"${CATEGORY}\": {
+                  \"${origin}\": {
+                    \"name\": \$name,
+                    \"description\": \$desc,
+                    \"branch\": \$version,
+                    \"manifest\": \$url
+                  }
+                }
+              }")
+
+              jq_args+=(--arg name "$name" --arg desc "$description" \
+                        --arg version "$version" --arg url "$manifest_url")
+            done < <(git ls-files -z "$catdir" -- ':(glob)**/manifest.json')
+          done
+
+          printf '%s\n' "${jq_objects[@]:-{} }" |
+            jq -s "${jq_args[@]}" '
+                reduce .[] as $item ({}; . * $item)
+            ' > "$ROOT_DIR/index.json"
+
+          echo "✅ Written $(jq '.. | objects | length' "$ROOT_DIR/index.json") records in /index.json"
 
       - name: "Commit index changes"
         run: |
