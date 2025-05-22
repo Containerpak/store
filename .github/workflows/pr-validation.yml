@@ -7,7 +7,8 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Download cpak binary
         run: |
@@ -21,8 +22,8 @@ jobs:
         run: |
           git fetch origin main
           files=$(git diff --name-only origin/main HEAD \
-            | grep '^categories/.*/cpak.json$' || true)
-          echo "::set-output name=files::$files"
+            | grep -E '^categories/.*/manifest\.json$' || true)
+          echo "files=$files" >> $GITHUB_OUTPUT
 
       - name: Validate local manifest schema
         if: steps.changes.outputs.files != ''
@@ -37,11 +38,11 @@ jobs:
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
             origin=$(echo "$f" \
-              | sed -E 's|categories/[^/]*/||; s|/cpak.json$||; s|github/com|github.com|')
-            url="https://raw.githubusercontent.com/${origin}/main/cpak.json"
+              | sed -E 's|categories/[^/]*/||; s|/manifest\.json$||; \
+                        s|github/com|github.com|')
+            url="https://raw.githubusercontent.com/${origin}/main/manifest.json"
             echo "Fetching remote manifest: $url"
             curl -sSL "$url" -o remote.json
-            echo "Validating schema of remote manifest"
             ./scripts/validate-manifest-schema.sh remote.json
           done
 
@@ -50,21 +51,19 @@ jobs:
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
             origin=$(echo "$f" \
-              | sed -E 's|categories/[^/]*/||; s|/cpak.json$||; s|github/com|github.com|')
+              | sed -E 's|categories/[^/]*/||; s|/manifest\.json$||; \
+                        s|github/com|github.com|')
 
-            # extract exactly one of branch|commit|release
             BRANCH=$(jq -r '.branch // ""' "$f")
             COMMIT=$(jq -r '.commit // ""' "$f")
             RELEASE=$(jq -r '.release // ""' "$f")
-            count=$(printf "%s\n%s\n%s\n" "$BRANCH" "$COMMIT" "$RELEASE" \
-              | grep -cve '^$')
+            count=$(printf "%s\n%s\n%s\n" \
+              "$BRANCH" "$COMMIT" "$RELEASE" | grep -cve '^$')
             if [ "$count" -ne 1 ]; then
-              echo "ERROR: manifest for $origin must set exactly one of"
-              echo "       branch, commit or release"
+              echo "ERROR: exactly one of branch, commit or release must be set"
               exit 1
             fi
 
-            # build install flags
             args=()
             [ -n "$BRANCH" ]  && args+=(--branch "$BRANCH")
             [ -n "$COMMIT" ]  && args+=(--commit "$COMMIT")
