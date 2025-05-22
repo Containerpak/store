@@ -121,55 +121,49 @@ jobs:
         run: |
           set -euo pipefail
           ROOT_DIR="$(git rev-parse --show-toplevel)"
+          cd "$ROOT_DIR"
           DEFAULT_REF="${DEFAULT_REF:-main}"
           RAW_BASE="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}"
 
-          jq_objects=()
-          jq_args=()
-          tmpfile="$(mktemp)"
+          declare -a jq_fragments
 
-          for catdir in "${ROOT_DIR}"/categories/*/ ; do
-            [[ -d "$catdir" ]] || continue
-            CATEGORY=$(basename "$catdir")
+          while IFS= read -r -d '' mf; do
+              rel_path="${mf}"
 
-            while IFS= read -r -d '' mf ; do
-              rel_path=${mf#"$ROOT_DIR/"}
-              origin=${rel_path#categories/*/}
-              origin=${origin%/manifest.json}
-              origin=${origin//github\/com/github.com}
+              CATEGORY="${rel_path#categories/}"
+              CATEGORY="${CATEGORY%%/*}"
+
+              origin="${rel_path#categories/${CATEGORY}/}"
+              origin="${origin%/manifest.json}"
+              origin="${origin//github\/com/github.com}"
 
               read -r name description branch commit release < <(
-                jq -r '.name, .description,
-                        (.branch // ""),
-                        (.commit  // ""),
-                        (.release // "")' "$mf"
+                  jq -r '.name, .description,
+                              (.branch  // ""),
+                              (.commit  // ""),
+                              (.release // "")' "$mf"
               )
               version=${branch:-${commit:-${release:-""}}}
 
               manifest_url="${RAW_BASE}/${DEFAULT_REF}/${rel_path}"
 
-              jq_objects+=("{
-                \"${CATEGORY}\": {
-                  \"${origin}\": {
-                    \"name\": \$name,
-                    \"description\": \$desc,
-                    \"branch\": \$version,
-                    \"manifest\": \$url
-                  }
-                }
-              }")
+              jq_fragments+=("$(
+                  jq -n \
+                      --arg cat   "$CATEGORY" \
+                      --arg orig  "$origin" \
+                      --arg name  "$name" \
+                      --arg desc  "$description" \
+                      --arg ver   "$version" \
+                      --arg url   "$manifest_url" \
+                      '{($cat): {($orig): {name:$name, description:$desc, branch:$ver, manifest:$url}}}'
+              )")
+          done < <(git ls-files -z -- 'categories/*/**/manifest.json')
 
-              jq_args+=(--arg name "$name" --arg desc "$description" \
-                        --arg version "$version" --arg url "$manifest_url")
-            done < <(git ls-files -z "$catdir" -- ':(glob)**/manifest.json')
-          done
+          printf '%s\n' "${jq_fragments[@]}" |
+          jq -s 'reduce .[] as $o ({}; . * $o)' > index.json
 
-          printf '%s\n' "${jq_objects[@]:-{} }" |
-            jq -s "${jq_args[@]}" '
-                reduce .[] as $item ({}; . * $item)
-            ' > "$ROOT_DIR/index.json"
-
-          echo "✅ Written $(jq '.. | objects | length' "$ROOT_DIR/index.json") records in /index.json"
+          pkg_count=$(jq '[..|objects? | select(has("manifest"))] | length' index.json)
+          echo "✅ Written $pkg_count packages to index.json"
 
       - name: "Commit index changes"
         run: |
