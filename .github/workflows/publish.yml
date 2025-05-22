@@ -13,27 +13,62 @@ jobs:
       )
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout PR branch
+      - name: "Checkout PR branch"
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.issue.pull_request.head.ref }}
 
-      - name: Setup Git for Push
+      - name: "Setup Git for Push"
         run: |
           git config user.name  github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
 
-      - name: Publish Category
-        env:
-          CATEGORY: ${{ github.event.comment.body }}
+      - name: "Extract category name"
+        id: set-cat
         run: |
-          CAT="${CATEGORY#'!publish '}"
-          echo "Regenerating index for category: $CAT"
+            BODY="${{ github.event.comment.body }}"
+            CAT="${BODY#\!publish }"
+            echo "cat=$CAT" >> $GITHUB_OUTPUT
+  
+
+      - name: "Comment: Publishing started"
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.pull_request.number }}
+          body: |
+            🏗️ Publishing index for category: `${{ steps.set-cat.outputs.cat }}`
+            Please wait...
+
+      - name: "Publish Category"
+        env:
+          CAT: ${{ steps.set-cat.outputs.cat }}
+        run: |
+          echo "→ Regenerating index for category: $CAT"
           bash scripts/generate-index.sh "$CAT"
           bash scripts/update-timestamp.sh
 
-      - name: Push Index Changes
+      - name: "Push Index Changes"
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.event.issue.pull_request.head.ref }}
+
+      - name: "Comment: Publish succeeded"
+        if: ${{ success() }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.pull_request.number }}
+          body: |
+            ✅ Category `${{ steps.set-cat.outputs.cat }}` published successfully!
+
+      - name: "Comment: Publish failed"
+        if: ${{ failure() }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.pull_request.number }}
+          body: |
+            ❌ Publishing category `${{ steps.set-cat.outputs.cat }}` failed.
+            See the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.
