@@ -26,16 +26,15 @@ jobs:
       - name: "Extract category name"
         id: set-cat
         run: |
-            BODY="${{ github.event.comment.body }}"
-            CAT="${BODY#\!publish }"
-            echo "cat=$CAT" >> $GITHUB_OUTPUT
-  
+          BODY="${{ github.event.comment.body }}"
+          CAT="${BODY#\!publish }"
+          echo "cat=$CAT" >> $GITHUB_OUTPUT
 
       - name: "Comment: Publishing started"
         uses: peter-evans/create-or-update-comment@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
             🏗️ Publishing index for category: `${{ steps.set-cat.outputs.cat }}`
             Please wait...
@@ -59,7 +58,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
             ✅ Category `${{ steps.set-cat.outputs.cat }}` published successfully!
 
@@ -68,7 +67,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
             ❌ Publishing category `${{ steps.set-cat.outputs.cat }}` failed.
             See the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.
