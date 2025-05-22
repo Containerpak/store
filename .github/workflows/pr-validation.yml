@@ -31,7 +31,7 @@ jobs:
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
             echo "→ Validating local schema: $f"
-            ./scripts/validate-manifest-schema.sh "$f"
+            bash scripts/validate-manifest-schema.sh "$f"
           done
 
       - name: Fetch & smoke-test remote cpak.json
