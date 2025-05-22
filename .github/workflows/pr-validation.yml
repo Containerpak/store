@@ -69,3 +69,28 @@ jobs:
             echo "→ Installing via cpak: cpak install $origin ${args[*]}"
             ./cpak install "$origin" "${args[@]}"
           done
+
+      - name: Comment on success
+        if: ${{ always() && success() }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ✅ PR validation succeeded!
+            Tested manifests:
+            ```
+            ${{ steps.changes.outputs.files }}
+            ```
+
+      - name: Comment on failure
+        if: ${{ always() && failure() }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ❌ PR validation failed.
+            Please check the [logs](${{ github.server_url }}/
+            ${{ github.repository }}/actions/runs/${{ github.run_id }})
+            for details.
