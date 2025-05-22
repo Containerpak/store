@@ -1,4 +1,5 @@
 name: PR Validation
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -29,46 +30,49 @@ jobs:
         if: steps.changes.outputs.files != ''
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
-            echo "Validating schema of $f"
-            bash scripts/validate-manifest-schema.sh "$f"
+            echo "→ Validating local schema: $f"
+            ./scripts/validate-manifest-schema.sh "$f"
           done
 
-      - name: Validate remote manifest schema
+      - name: Fetch & smoke-test remote cpak.json
         if: steps.changes.outputs.files != ''
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
-            origin=$(echo "$f" \
-              | sed -E 's|categories/[^/]*/||; s|/manifest\.json$||; \
-                        s|github/com|github.com|')
-            url="https://raw.githubusercontent.com/${origin}/main/manifest.json"
-            echo "Fetching remote manifest: $url"
+            # strip "categories/<Cat>/"
+            base=${f#categories/*/}
+            # strip "/manifest.json"
+            base=${base%/manifest.json}
+            # convert github/com/... → github.com/...
+            origin=${base//github\/com/github.com}
+
+            # pick the single version field
+            ref=$(jq -r '.branch // .commit // .release' "$f")
+
+            url="https://raw.githubusercontent.com/${origin}/${ref}/cpak.json"
+            echo "→ Fetching remote cpak.json: $url"
             curl -sSL "$url" -o remote.json
-            ./scripts/validate-manifest-schema.sh remote.json
+
+            echo "→ Validating remote JSON syntax"
+            jq empty remote.json
           done
 
       - name: Test install of added cpak
         if: steps.changes.outputs.files != ''
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
-            origin=$(echo "$f" \
-              | sed -E 's|categories/[^/]*/||; s|/manifest\.json$||; \
-                        s|github/com|github.com|')
+            base=${f#categories/*/}
+            base=${base%/manifest.json}
+            origin=${base//github\/com/github.com}
 
-            BRANCH=$(jq -r '.branch // ""' "$f")
-            COMMIT=$(jq -r '.commit // ""' "$f")
-            RELEASE=$(jq -r '.release // ""' "$f")
-            count=$(printf "%s\n%s\n%s\n" \
-              "$BRANCH" "$COMMIT" "$RELEASE" | grep -cve '^$')
-            if [ "$count" -ne 1 ]; then
-              echo "ERROR: exactly one of branch, commit or release must be set"
-              exit 1
-            fi
+            BRANCH=$(jq -r '.branch // empty' "$f")
+            COMMIT=$(jq -r '.commit // empty' "$f")
+            RELEASE=$(jq -r '.release // empty' "$f")
 
             args=()
             [ -n "$BRANCH" ]  && args+=(--branch "$BRANCH")
             [ -n "$COMMIT" ]  && args+=(--commit "$COMMIT")
             [ -n "$RELEASE" ] && args+=(--release "$RELEASE")
 
-            echo "→ Installing $origin ${args[*]}"
+            echo "→ Installing via cpak: cpak install $origin ${args[*]}"
             ./cpak install "$origin" "${args[@]}"
           done

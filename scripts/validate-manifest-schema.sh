@@ -14,14 +14,14 @@ if ! jq empty "$file" >/dev/null 2>&1; then
 fi
 
 for field in name description; do
-  if ! jq -e --arg f "$field" '.[$f] // empty | length > 0' "$file" >/dev/null; then
-    echo "ERROR: '$field' is missing or empty in $file"
+  if ! jq -e --arg f "$field" '.[$f] | type == "string" and (. != "")' "$file" >/dev/null; then
+    echo "ERROR: '$field' must be a non-empty string in $file"
     exit 1
   fi
 done
 
 count=$(jq -r '[.branch, .commit, .release]
-  | map(select(. != null and . != "")) | length' "$file")
+  | map(select(type=="string" and . != "")) | length' "$file")
 if [ "$count" -ne 1 ]; then
   echo "ERROR: exactly one of branch, commit or release must be set in $file"
   exit 1
