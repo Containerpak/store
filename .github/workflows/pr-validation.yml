@@ -30,7 +30,7 @@ jobs:
         run: |
           for f in ${{ steps.changes.outputs.files }}; do
             echo "Validating schema of $f"
-            ./scripts/validate-manifest-schema.sh "$f"
+            bash scripts/validate-manifest-schema.sh "$f"
           done
 
       - name: Validate remote manifest schema

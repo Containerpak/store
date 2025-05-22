@@ -31,8 +31,8 @@ jobs:
           # Remove the "!publish " prefix
           CAT="${CATEGORY#'!publish '}"
           echo "Regenerating index for category: $CAT"
-          scripts/generate-index.sh "$CAT"
-          scripts/update-timestamp.sh
+          bash scripts/generate-index.sh "$CAT"
+          bash scripts/update-timestamp.sh
 
       - name: Push Index Changes
         uses: ad-m/github-push-action@v0.6.0
