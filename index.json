@@ -1,0 +1,18 @@
+{
+  "Multimedia": {
+    "github.com/containerpak/spotify": {
+      "name": "Spotify",
+      "description": "",
+      "branch": "",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
+    }
+  },
+  "Web": {
+    "github.com/containerpak/chrome": {
+      "name": "Google",
+      "description": "Chrome",
+      "branch": "",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/chrome/manifest.json"
+    }
+  }
+}
