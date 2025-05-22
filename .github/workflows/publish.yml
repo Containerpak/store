@@ -47,6 +47,11 @@ jobs:
           bash scripts/generate-index.sh "$CAT"
           bash scripts/update-timestamp.sh
 
+      - name: "Commit index changes"
+        run: |
+          git add .
+          git diff --cached --quiet || git commit -m "chore(store): update index for category ${{ steps.set-cat.outputs.cat }}"
+
       - name: "Push Index Changes"
         uses: ad-m/github-push-action@v0.6.0
         with:
