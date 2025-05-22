@@ -17,11 +17,11 @@ fi
 
 origins=()
 while IFS= read -r json; do
-  rel=${json#"$DIR/"}        
-  rel=${rel%/cpak.json}      #
+  rel=${json#"$DIR/"}          
+  rel=${rel%/manifest.json}    
   origin=${rel//github\/com/github.com}
   origins+=("$origin")
-done < <(find "$DIR" -type f -path "*/cpak.json")
+done < <(find "$DIR" -type f -name "manifest.json")
 
 {
   echo "["

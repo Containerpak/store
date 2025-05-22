@@ -1,4 +1,3 @@
-# .github/workflows/publish.yml
 name: Publish Category Index
 on:
   issue_comment:
@@ -28,7 +27,6 @@ jobs:
         env:
           CATEGORY: ${{ github.event.comment.body }}
         run: |
-          # Remove the "!publish " prefix
           CAT="${CATEGORY#'!publish '}"
           echo "Regenerating index for category: $CAT"
           bash scripts/generate-index.sh "$CAT"
