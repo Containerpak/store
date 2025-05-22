@@ -1,0 +1,143 @@
+name: Publish Category Index
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  publish:
+    if: >
+      startsWith(github.event.comment.body, '!publish ') &&
+      (
+        github.event.comment.author_association == 'OWNER' ||
+        github.event.comment.author_association == 'MEMBER'
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Get PR head ref"
+        id: pr
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.issue.number
+            });
+            core.setOutput('head_ref', pr.data.head.ref);
+
+      - name: “Checkout PR branch”
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: refs/pull/${{ github.event.issue.number }}/head
+
+      - name: "Setup Git for Push"
+        run: |
+          git config user.name  github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+
+      - name: "Extract category name"
+        id: set-cat
+        run: |
+          BODY="${{ github.event.comment.body }}"
+          CAT="${BODY#\!publish }"
+          echo "cat=$CAT" >> $GITHUB_OUTPUT
+
+      - name: "Comment: Publishing started"
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            🏗️ Publishing index for category: `${{ steps.set-cat.outputs.cat }}`
+            Please wait...
+
+      - name: "Publish Category"
+        env:
+          CAT: ${{ steps.set-cat.outputs.cat }}
+        run: |
+          echo "→ Regenerating index for category: $CAT"
+          bash scripts/update-timestamp.sh
+          set -euo pipefail
+
+          DEBUG=${DEBUG:-false}
+          log_debug() {
+              if [[ "$DEBUG" == "true" ]]; then
+                  echo "DEBUG: $*" >&2
+              fi
+          }
+
+          CATEGORY="$CAT"
+          ROOT="categories/$CATEGORY"
+          OUT="$ROOT/index.json"
+
+          log_debug "CATEGORY=$CATEGORY"
+          log_debug "ROOT=$ROOT"
+          log_debug "OUT=$OUT"
+
+          CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          log_debug "CURRENT_BRANCH=$CURRENT_BRANCH"
+
+          if [[ "$CURRENT_BRANCH" != "main" && "$CURRENT_BRANCH" != "master" ]]; then
+              echo "ℹ️  You are in branch '$CURRENT_BRANCH'. Ensure this is the correct branch for the PR." >&2
+          else
+              echo "ℹ️  You are in the default branch '$CURRENT_BRANCH'." >&2
+          fi
+
+          [[ -d $ROOT ]] || { echo "❌  category '$CATEGORY' not found" >&2; exit 1; }
+
+          mapfile -t manifests < <(
+            git ls-files -- ':(glob)'"$ROOT"'/**/manifest.json'
+          )
+
+          if [[ ${#manifests[@]} -eq 0 ]]; then
+              echo "⚠️  no manifest.json under $ROOT" >&2
+          fi
+
+          origins=()
+          for mf in "${manifests[@]}"; do
+              rel=${mf#"$ROOT/"}           
+              rel=${rel%/manifest.json}
+              rel=${rel//github\/com/github.com}
+              origins+=("$rel")
+          done
+
+          printf '%s\n' "${origins[@]}" | sort -u | jq -Rsc 'split("\n")[:-1]' > "$OUT"
+          echo "✅  Written $((${#origins[@]})) rows to $OUT"
+
+          # Generate a tree of the directory
+          echo "📂 Directory tree under $ROOT:"
+          tree "$ROOT"
+
+
+      - name: "Commit index changes"
+        run: |
+          git add .
+          git diff --cached --quiet || \
+            git commit -m "chore(store): update index for category ${{ steps.set-cat.outputs.cat }}"
+
+      - name: "Push Index Changes"
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.pr.outputs.head_ref }}
+
+      - name: "Comment: Publish succeeded"
+        if: ${{ success() }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ✅ Category `${{ steps.set-cat.outputs.cat }}` published successfully!
+
+      - name: "Comment: Publish failed"
+        if: ${{ failure() }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ❌ Publishing category `${{ steps.set-cat.outputs.cat }}` failed.
+            See the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.
