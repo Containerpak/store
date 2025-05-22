@@ -124,8 +124,9 @@ jobs:
           DEFAULT_REF="${DEFAULT_REF:-main}"
           RAW_BASE="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}"
 
-          tmpfile="$(mktemp)"
           jq_objects=()
+          jq_args=()
+          tmpfile="$(mktemp)"
 
           for catdir in "${ROOT_DIR}"/categories/*/ ; do
             [[ -d "$catdir" ]] || continue
@@ -137,7 +138,6 @@ jobs:
               origin=${origin%/manifest.json}
               origin=${origin//github\/com/github.com}
 
-              # campi dal manifest
               read -r name description branch commit release < <(
                 jq -r '.name, .description,
                         (.branch // ""),
