@@ -1,0 +1,41 @@
+# .github/workflows/publish.yml
+name: Publish Category Index
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  publish:
+    if: >
+      startsWith(github.event.comment.body, '!publish ') &&
+      (
+        github.event.comment.author_association == 'OWNER' ||
+        github.event.comment.author_association == 'MEMBER'
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.issue.pull_request.head.ref }}
+
+      - name: Setup Git for Push
+        run: |
+          git config user.name  github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+
+      - name: Publish Category
+        env:
+          CATEGORY: ${{ github.event.comment.body }}
+        run: |
+          # Remove the "!publish " prefix
+          CAT="${CATEGORY#'!publish '}"
+          echo "Regenerating index for category: $CAT"
+          scripts/generate-index.sh "$CAT"
+          scripts/update-timestamp.sh
+
+      - name: Push Index Changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event.issue.pull_request.head.ref }}
