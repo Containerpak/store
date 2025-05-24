@@ -1,4 +1,20 @@
 {
+  "Development": {
+    "github.com/containerpak/vscode": {
+      "name": "Visual",
+      "description": "Studio",
+      "branch": "Code",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/vscode/manifest.json"
+    }
+  },
+  "Games": {
+    "github.com/containerpak/steam": {
+      "name": "Steam",
+      "description": "",
+      "branch": "",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/steam/manifest.json"
+    }
+  },
   "Multimedia": {
     "github.com/containerpak/spotify": {
       "name": "Spotify",
