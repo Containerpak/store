@@ -1,0 +1,50 @@
+{
+    "AI-ML": {
+        "icon": "auto_graph",
+        "color": "#6B46C1"
+    },
+    "Database": {
+        "icon": "storage",
+        "color": "#2B6CB0"
+    },
+    "Development": {
+        "icon": "code",
+        "color": "#38A169"
+    },
+    "DevOps": {
+        "icon": "settings_suggest",
+        "color": "#DD6B20"
+    },
+    "Games": {
+        "icon": "sports_esports",
+        "color": "#D53F8C"
+    },
+    "Multimedia": {
+        "icon": "perm_media",
+        "color": "#319795"
+    },
+    "Networking": {
+        "icon": "wifi",
+        "color": "#3182CE"
+    },
+    "Productivity": {
+        "icon": "task_alt",
+        "color": "#D69E2E"
+    },
+    "Security": {
+        "icon": "lock",
+        "color": "#E53E3E"
+    },
+    "System": {
+        "icon": "memory",
+        "color": "#4A5568"
+    },
+    "Utilities": {
+        "icon": "build",
+        "color": "#718096"
+    },
+    "Web": {
+        "icon": "public",
+        "color": "#38B2AC"
+    }
+}
