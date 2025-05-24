@@ -76,6 +76,10 @@ jobs:
 
             # Validate file types
             echo "→ Validating file types in $base"
+            echo "→ Files in path: $base"
+            echo "→ Result of git ls-tree:"
+            git ls-tree -r --name-only "$ref" | grep "^categories/${base}/"
+            
             for file in $(git ls-tree -r --name-only "$ref" | grep "^categories/${base}/"); do
               ext="${file##*.}"
               filename="${file##*/}"
