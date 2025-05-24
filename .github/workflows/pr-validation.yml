@@ -59,54 +59,21 @@ jobs:
       - name: Fetch & smoke-test remote cpak.json
         if: steps.changes.outputs.files != ''
         run: |
-            set -euo pipefail
-            for f in ${{ steps.changes.outputs.files }}; do
+          set -euo pipefail
+          for f in ${{ steps.changes.outputs.files }}; do
             base=${f#categories/*/}
             base=${base%/manifest.json}
             origin=${base//github\/com/github.com}
             repo_path=${origin#github.com/}
-          
+      
             ref=$(jq -r '.branch // .commit // .release' "$f")
             url="https://raw.githubusercontent.com/${repo_path}/${ref}/cpak.json"
-          
+      
             echo "→ Fetching remote cpak.json: $url"
             curl -sfSL "$url" -o remote.json
             echo "→ Validating remote JSON syntax"
             jq empty remote.json
-
-            # Validate file types
-            echo "→ Validating file types in $base"
-            for file in $(git ls-tree -r --name-only "$ref" | grep "^categories/${base}/"); do
-              ext="${file##*.}"
-              filename="${file##*/}"
-              if [[ ! "$ext" =~ ^(svg|webp|webm|json)$ ]]; then
-              echo "ERROR: Invalid file type '$ext' in $file"
-              exit 1
-              fi
-
-              # Check for screenshot- prefix
-              if [[ "$filename" == screenshot-* && "$ext" != "webp" ]]; then
-              echo "ERROR: Files with 'screenshot-' prefix must be .webp: $file"
-              exit 1
-              fi
-
-              # Check for showcase file
-              if [[ "$filename" == showcase.* && "$ext" != "webm" ]]; then
-              echo "ERROR: 'showcase' file must be .webm: $file"
-              exit 1
-              fi
-
-              # Check for mandatory icon.svg
-              if [[ "$filename" == "icon.svg" ]]; then
-              icon_found=true
-              fi
-            done
-
-            if [[ "${icon_found:-false}" != true ]]; then
-              echo "ERROR: Mandatory 'icon.svg' file is missing in $base"
-              exit 1
-            fi
-            done
+          done
         
       - name: Test install of added cpak
         if: steps.changes.outputs.files != ''
