@@ -1,5 +1,11 @@
 {
   "Development": {
+    "github.com/containerpak/sdk-go": {
+      "name": "Go",
+      "description": "SDK",
+      "branch": "",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-go/manifest.json"
+    },
     "github.com/containerpak/vscode": {
       "name": "Visual",
       "description": "Studio",
