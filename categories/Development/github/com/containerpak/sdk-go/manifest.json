@@ -1,5 +1,5 @@
 {
     "name": "Go SDK",
-    "description": "The Go SDK for ContainerPak provides tools and libraries to develop applications in Go.",
+    "description": "The Go SDK for cpak provides tools and libraries to develop applications in Go.",
     "branch": "main"
 }
