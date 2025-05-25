@@ -8,6 +8,12 @@
     }
   },
   "Games": {
+    "github.com/containerpak/lutris": {
+      "name": "Lutris",
+      "description": "",
+      "branch": "",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lutris/manifest.json"
+    },
     "github.com/containerpak/steam": {
       "name": "Steam",
       "description": "",
