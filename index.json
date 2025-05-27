@@ -6,6 +6,12 @@
       "branch": "",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-go/manifest.json"
     },
+    "github.com/containerpak/sdk-node-lts": {
+      "name": "Node",
+      "description": "LTS",
+      "branch": "SDK",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-node-lts/manifest.json"
+    },
     "github.com/containerpak/vscode": {
       "name": "Visual",
       "description": "Studio",
