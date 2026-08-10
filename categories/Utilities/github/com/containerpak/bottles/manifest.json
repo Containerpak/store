@@ -1,0 +1,5 @@
+{
+  "name": "Bottles",
+  "description": "Run and manage Windows applications on Linux with Wine and Proton.",
+  "branch": "main"
+}

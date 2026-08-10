@@ -1,51 +1,65 @@
 {
   "Development": {
     "github.com/containerpak/sdk-go": {
-      "name": "Go",
-      "description": "SDK",
-      "branch": "",
+      "name": "Go SDK",
+      "description": "The Go SDK for cpak provides tools and libraries to develop applications in Go.",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-go/manifest.json"
     },
     "github.com/containerpak/sdk-node-lts": {
-      "name": "Node",
-      "description": "LTS",
-      "branch": "SDK",
+      "name": "Node LTS SDK",
+      "description": "Build simple, secure, scalable systems with Node.js",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-node-lts/manifest.json"
     },
     "github.com/containerpak/vscode": {
-      "name": "Visual",
-      "description": "Studio",
-      "branch": "Code",
+      "name": "Visual Studio Code",
+      "description": "Free, lightweight, extensible code editor for building virtually everything.",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/vscode/manifest.json"
     }
   },
   "Games": {
     "github.com/containerpak/lutris": {
       "name": "Lutris",
-      "description": "",
-      "branch": "",
+      "description": "Lutris is a video game preservation platform aiming to keep your video game collection up and running for the years to come.",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lutris/manifest.json"
     },
     "github.com/containerpak/steam": {
       "name": "Steam",
-      "description": "",
-      "branch": "",
+      "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/steam/manifest.json"
+    },
+    "github.com/containerpak/umu": {
+      "name": "UMU",
+      "description": "Unified launcher for Windows games with Proton outside Steam.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/umu/manifest.json"
     }
   },
   "Multimedia": {
     "github.com/containerpak/spotify": {
       "name": "Spotify",
-      "description": "",
-      "branch": "",
+      "description": "Online music streaming service",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
+    }
+  },
+  "Utilities": {
+    "github.com/containerpak/bottles": {
+      "name": "Bottles",
+      "description": "Run and manage Windows applications on Linux with Wine and Proton.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/containerpak/bottles/manifest.json"
     }
   },
   "Web": {
     "github.com/containerpak/chrome": {
-      "name": "Google",
-      "description": "Chrome",
-      "branch": "",
+      "name": "Google Chrome",
+      "description": "The Google Chrome web browser.",
+      "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/chrome/manifest.json"
     }
   }
