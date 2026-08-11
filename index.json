@@ -39,12 +39,40 @@
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/umu/manifest.json"
     }
   },
+  "Graphics": {
+    "github.com/containerpak/gimp": {
+      "name": "GIMP",
+      "description": "Create images and edit photographs.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/gimp/manifest.json"
+    },
+    "github.com/containerpak/inkscape": {
+      "name": "Inkscape",
+      "description": "Create and edit vector graphics.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/inkscape/manifest.json"
+    }
+  },
   "Multimedia": {
+    "github.com/containerpak/obs-studio": {
+      "name": "OBS Studio",
+      "description": "Record video and stream live.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/obs-studio/manifest.json"
+    },
     "github.com/containerpak/spotify": {
       "name": "Spotify",
       "description": "Online music streaming service",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
+    }
+  },
+  "Productivity": {
+    "github.com/containerpak/libreoffice": {
+      "name": "LibreOffice",
+      "description": "The free and open source office suite.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/libreoffice/manifest.json"
     }
   },
   "Utilities": {
@@ -61,6 +89,12 @@
       "description": "The Google Chrome web browser.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/chrome/manifest.json"
+    },
+    "github.com/containerpak/firefox": {
+      "name": "Firefox",
+      "description": "Fast, private and safe web browser.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/firefox/manifest.json"
     }
   }
 }

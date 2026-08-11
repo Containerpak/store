@@ -19,6 +19,10 @@
         "icon": "sports_esports",
         "color": "#D53F8C"
     },
+    "Graphics": {
+        "icon": "palette",
+        "color": "#9F7AEA"
+    },
     "Multimedia": {
         "icon": "perm_media",
         "color": "#319795"
