@@ -132,11 +132,11 @@
     }
   },
   "Utilities": {
-    "github.com/containerpak/bottles": {
+    "github.com/bottlesdevs/bottles": {
       "name": "Bottles",
       "description": "Run and manage Windows applications on Linux with Wine and Proton.",
       "branch": "main",
-      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/containerpak/bottles/manifest.json"
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles/manifest.json"
     }
   },
   "Web": {

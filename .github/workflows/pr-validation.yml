@@ -13,8 +13,13 @@ jobs:
       - name: Download cpak binary
         run: |
           curl -sSL \
-            -o cpak \
-            https://github.com/Containerpak/cpak/releases/download/continuous/cpak
+            -o cpak-linux-amd64 \
+            https://github.com/Containerpak/cpak/releases/download/continuous/cpak-linux-amd64
+          curl -sSL \
+            -o SHA256SUMS \
+            https://github.com/Containerpak/cpak/releases/download/continuous/SHA256SUMS
+          sha256sum -c --ignore-missing SHA256SUMS
+          mv cpak-linux-amd64 cpak
           chmod +x cpak
 
       - name: Find changed manifests
