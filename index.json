@@ -20,11 +20,35 @@
     }
   },
   "Games": {
+    "github.com/containerpak/dolphin-emu": {
+      "name": "Dolphin Emulator",
+      "description": "Play Nintendo GameCube and Wii games on Linux.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/dolphin-emu/manifest.json"
+    },
+    "github.com/containerpak/heroic": {
+      "name": "Heroic Games Launcher",
+      "description": "Play and manage games from Epic Games, GOG and Amazon Prime Gaming.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/heroic/manifest.json"
+    },
     "github.com/containerpak/lutris": {
       "name": "Lutris",
       "description": "Lutris is a video game preservation platform aiming to keep your video game collection up and running for the years to come.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lutris/manifest.json"
+    },
+    "github.com/containerpak/prism-launcher": {
+      "name": "Prism Launcher",
+      "description": "Manage separate Minecraft installations, accounts and mod packs.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/prism-launcher/manifest.json"
+    },
+    "github.com/containerpak/retroarch": {
+      "name": "RetroArch",
+      "description": "Run classic games through a unified frontend for libretro cores.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/retroarch/manifest.json"
     },
     "github.com/containerpak/steam": {
       "name": "Steam",
@@ -54,6 +78,12 @@
     }
   },
   "Multimedia": {
+    "github.com/containerpak/audacity": {
+      "name": "Audacity",
+      "description": "Record and edit audio with effects, plugins and multitrack tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/audacity/manifest.json"
+    },
     "github.com/containerpak/obs-studio": {
       "name": "OBS Studio",
       "description": "Record video and stream live.",
@@ -71,6 +101,26 @@
       "description": "Play video, audio and network streams.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vlc/manifest.json"
+    }
+  },
+  "Networking": {
+    "github.com/containerpak/localsend": {
+      "name": "LocalSend",
+      "description": "Share files securely with nearby devices over the local network.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/localsend/manifest.json"
+    },
+    "github.com/containerpak/qbittorrent": {
+      "name": "qBittorrent",
+      "description": "Download and manage torrents with a native desktop client.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/qbittorrent/manifest.json"
+    },
+    "github.com/containerpak/telegram": {
+      "name": "Telegram Desktop",
+      "description": "Use Telegram messages, calls and file sharing from the desktop.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/telegram/manifest.json"
     }
   },
   "Productivity": {

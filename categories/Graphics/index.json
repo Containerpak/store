@@ -1,1 +1,4 @@
-["github.com/containerpak/gimp","github.com/containerpak/inkscape"]
+[
+  "github.com/containerpak/gimp",
+  "github.com/containerpak/inkscape"
+]

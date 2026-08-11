@@ -1,1 +1,4 @@
-["github.com/containerpak/chrome","github.com/containerpak/firefox"]
+[
+  "github.com/containerpak/chrome",
+  "github.com/containerpak/firefox"
+]

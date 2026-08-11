@@ -1,0 +1,5 @@
+{
+  "name": "RetroArch",
+  "description": "Run classic games through a unified frontend for libretro cores.",
+  "branch": "main"
+}
