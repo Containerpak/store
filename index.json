@@ -65,6 +65,12 @@
       "description": "Online music streaming service",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
+    },
+    "github.com/containerpak/vlc": {
+      "name": "VLC",
+      "description": "Play video, audio and network streams.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vlc/manifest.json"
     }
   },
   "Productivity": {
