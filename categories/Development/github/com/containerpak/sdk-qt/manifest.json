@@ -1,0 +1,5 @@
+{
+  "name": "Qt SDK",
+  "description": "Qt 6 build tools with Core, Widgets and WebEngine development files.",
+  "branch": "main"
+}

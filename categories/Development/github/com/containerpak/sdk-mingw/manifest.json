@@ -1,0 +1,5 @@
+{
+  "name": "MinGW SDK",
+  "description": "MinGW-w64 C and C++ cross-compilers for 32-bit and 64-bit Windows targets.",
+  "branch": "main"
+}

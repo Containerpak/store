@@ -52,6 +52,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-lua/manifest.json"
     },
+    "github.com/containerpak/sdk-mingw": {
+      "name": "MinGW SDK",
+      "description": "MinGW-w64 C and C++ cross-compilers for 32-bit and 64-bit Windows targets.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-mingw/manifest.json"
+    },
     "github.com/containerpak/sdk-native": {
       "name": "Native SDK",
       "description": "C and C++ compilers, build systems, debuggers and binary tools.",
@@ -76,6 +82,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-python/manifest.json"
     },
+    "github.com/containerpak/sdk-qt": {
+      "name": "Qt SDK",
+      "description": "Qt 6 build tools with Core, Widgets and WebEngine development files.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-qt/manifest.json"
+    },
     "github.com/containerpak/sdk-ruby": {
       "name": "Ruby SDK",
       "description": "Ruby interpreter, headers, RubyGems and Bundler.",
@@ -93,6 +105,12 @@
       "description": "Vala compiler with GTK, libadwaita and GObject development files.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-vala/manifest.json"
+    },
+    "github.com/containerpak/sdk-vulkan": {
+      "name": "Vulkan and Shader SDK",
+      "description": "Vulkan headers, diagnostics, glslang and SPIR-V development tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-vulkan/manifest.json"
     },
     "github.com/containerpak/sdk-zig": {
       "name": "Zig SDK",

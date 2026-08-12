@@ -1,0 +1,5 @@
+{
+  "name": "Vulkan and Shader SDK",
+  "description": "Vulkan headers, diagnostics, glslang and SPIR-V development tools.",
+  "branch": "main"
+}
