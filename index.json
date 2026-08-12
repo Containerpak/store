@@ -222,6 +222,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/runelite/manifest.json"
     },
+    "github.com/containerpak/scummvm": {
+      "name": "ScummVM",
+      "description": "Engine for classic adventure games.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/scummvm/manifest.json"
+    },
     "github.com/containerpak/steam": {
       "name": "Steam",
       "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
