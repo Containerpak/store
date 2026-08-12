@@ -1,0 +1,5 @@
+{
+  "name": "VSCodium",
+  "description": "Edit code with a community build of VS Code.",
+  "branch": "main"
+}

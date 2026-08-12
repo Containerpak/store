@@ -2,8 +2,14 @@
   "github.com/containerpak/acronis-connect",
   "github.com/containerpak/discord",
   "github.com/containerpak/localsend",
+  "github.com/containerpak/mattermost",
   "github.com/containerpak/qbittorrent",
   "github.com/containerpak/remmina",
   "github.com/containerpak/scrcpy",
-  "github.com/containerpak/telegram"
+  "github.com/containerpak/signal-desktop",
+  "github.com/containerpak/teams-for-linux",
+  "github.com/containerpak/telegram",
+  "github.com/containerpak/thunderbird",
+  "github.com/containerpak/vivaldi",
+  "github.com/containerpak/zoom"
 ]

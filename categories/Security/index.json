@@ -1,1 +1,4 @@
-["github.com/containerpak/bitwarden"]
+[
+  "github.com/containerpak/bitwarden",
+  "github.com/containerpak/keepassxc"
+]

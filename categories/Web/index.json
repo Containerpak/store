@@ -1,1 +1,6 @@
-["github.com/containerpak/brave","github.com/containerpak/chrome","github.com/containerpak/firefox","github.com/containerpak/zen"]
+[
+  "github.com/containerpak/brave",
+  "github.com/containerpak/chrome",
+  "github.com/containerpak/firefox",
+  "github.com/containerpak/zen"
+]

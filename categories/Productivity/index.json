@@ -1,1 +1,7 @@
-["github.com/containerpak/kate","github.com/containerpak/libreoffice","github.com/containerpak/obsidian","github.com/containerpak/onlyoffice"]
+[
+  "github.com/containerpak/kate",
+  "github.com/containerpak/libreoffice",
+  "github.com/containerpak/obsidian",
+  "github.com/containerpak/onlyoffice",
+  "github.com/containerpak/standard-notes"
+]

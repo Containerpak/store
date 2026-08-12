@@ -1,1 +1,11 @@
-["github.com/containerpak/audacity","github.com/containerpak/kooha","github.com/containerpak/obs-studio","github.com/containerpak/spotify","github.com/containerpak/stremio","github.com/containerpak/video-trimmer","github.com/containerpak/vlc","github.com/containerpak/vokoscreenng"]
+[
+  "github.com/containerpak/audacity",
+  "github.com/containerpak/kooha",
+  "github.com/containerpak/obs-studio",
+  "github.com/containerpak/shotcut",
+  "github.com/containerpak/spotify",
+  "github.com/containerpak/stremio",
+  "github.com/containerpak/video-trimmer",
+  "github.com/containerpak/vlc",
+  "github.com/containerpak/vokoscreenng"
+]

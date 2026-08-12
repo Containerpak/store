@@ -1,8 +1,10 @@
 [
   "github.com/containerpak/blender",
+  "github.com/containerpak/darktable",
   "github.com/containerpak/flameshot",
   "github.com/containerpak/fontforge",
   "github.com/containerpak/gimp",
   "github.com/containerpak/inkscape",
+  "github.com/containerpak/orcaslicer",
   "github.com/containerpak/upscaler"
 ]
