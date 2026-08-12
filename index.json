@@ -144,12 +144,6 @@
     }
   },
   "Games": {
-    "github.com/containerpak/bambu-studio": {
-      "name": "Bambu Studio",
-      "description": "Prepare and manage models for 3D printing.",
-      "branch": "main",
-      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/bambu-studio/manifest.json"
-    },
     "github.com/containerpak/dolphin-emu": {
       "name": "Dolphin Emulator",
       "description": "Play Nintendo GameCube and Wii games on Linux.",
@@ -254,6 +248,12 @@
     }
   },
   "Graphics": {
+    "github.com/containerpak/bambu-studio": {
+      "name": "Bambu Studio",
+      "description": "Prepare and manage models for 3D printing.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/bambu-studio/manifest.json"
+    },
     "github.com/containerpak/blender": {
       "name": "Blender",
       "description": "Create 3D models, animations, renders and video projects.",
