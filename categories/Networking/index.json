@@ -5,11 +5,14 @@
   "github.com/containerpak/mattermost",
   "github.com/containerpak/qbittorrent",
   "github.com/containerpak/remmina",
+  "github.com/containerpak/rustdesk",
   "github.com/containerpak/scrcpy",
   "github.com/containerpak/signal-desktop",
   "github.com/containerpak/teams-for-linux",
   "github.com/containerpak/telegram",
   "github.com/containerpak/thunderbird",
+  "github.com/containerpak/vesktop",
   "github.com/containerpak/vivaldi",
+  "github.com/containerpak/zapzap",
   "github.com/containerpak/zoom"
 ]

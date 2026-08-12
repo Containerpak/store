@@ -234,6 +234,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/sunshine/manifest.json"
     },
+    "github.com/containerpak/supermodel": {
+      "name": "Supermodel",
+      "description": "Sega Model 3 arcade emulator.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/supermodel/manifest.json"
+    },
     "github.com/containerpak/umu": {
       "name": "UMU",
       "description": "Unified launcher for Windows games with Proton outside Steam.",
@@ -278,6 +284,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/fontforge/manifest.json"
     },
+    "github.com/containerpak/freecad": {
+      "name": "FreeCAD",
+      "description": "Parametric 3D CAD modeler.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/freecad/manifest.json"
+    },
     "github.com/containerpak/gimp": {
       "name": "GIMP",
       "description": "Create images and edit photographs.",
@@ -309,6 +321,12 @@
       "description": "Record and edit audio with effects, plugins and multitrack tools.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/audacity/manifest.json"
+    },
+    "github.com/containerpak/freetube": {
+      "name": "FreeTube",
+      "description": "Private YouTube desktop client.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/freetube/manifest.json"
     },
     "github.com/containerpak/kooha": {
       "name": "Kooha",
@@ -396,6 +414,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/remmina/manifest.json"
     },
+    "github.com/containerpak/rustdesk": {
+      "name": "RustDesk",
+      "description": "Remote desktop software for secure connections.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/rustdesk/manifest.json"
+    },
     "github.com/containerpak/scrcpy": {
       "name": "scrcpy",
       "description": "Display and control Android devices over USB or TCP/IP.",
@@ -426,11 +450,23 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/thunderbird/manifest.json"
     },
+    "github.com/containerpak/vesktop": {
+      "name": "Vesktop",
+      "description": "Desktop Discord client with Vencord support.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/vesktop/manifest.json"
+    },
     "github.com/containerpak/vivaldi": {
       "name": "Vivaldi",
       "description": "Browse the web with a customizable browser.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/vivaldi/manifest.json"
+    },
+    "github.com/containerpak/zapzap": {
+      "name": "ZapZap",
+      "description": "WhatsApp desktop application written with PyQt6.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/zapzap/manifest.json"
     },
     "github.com/containerpak/zoom": {
       "name": "Zoom",
@@ -499,6 +535,12 @@
       "description": "Run and manage Windows applications on Linux with Wine and Proton.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles/manifest.json"
+    },
+    "github.com/containerpak/peazip": {
+      "name": "PeaZip",
+      "description": "Archive manager and file compression utility.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/containerpak/peazip/manifest.json"
     }
   },
   "Web": {
@@ -514,11 +556,23 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/chrome/manifest.json"
     },
+    "github.com/containerpak/edge": {
+      "name": "Microsoft Edge",
+      "description": "Microsoft Edge web browser.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/edge/manifest.json"
+    },
     "github.com/containerpak/firefox": {
       "name": "Firefox",
       "description": "Fast, private and safe web browser.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/firefox/manifest.json"
+    },
+    "github.com/containerpak/librewolf": {
+      "name": "LibreWolf",
+      "description": "Privacy-focused Firefox-based web browser.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/librewolf/manifest.json"
     },
     "github.com/containerpak/zen": {
       "name": "Zen Browser",

@@ -1,6 +1,8 @@
 [
   "github.com/containerpak/brave",
   "github.com/containerpak/chrome",
+  "github.com/containerpak/edge",
   "github.com/containerpak/firefox",
+  "github.com/containerpak/librewolf",
   "github.com/containerpak/zen"
 ]
