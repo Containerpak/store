@@ -144,11 +144,35 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lutris/manifest.json"
     },
+    "github.com/containerpak/melonds": {
+      "name": "melonDS",
+      "description": "Play Nintendo DS and DSi games with a free emulator.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/melonds/manifest.json"
+    },
+    "github.com/containerpak/ppsspp": {
+      "name": "PPSSPP",
+      "description": "Play PSP games on Linux with a fast and accurate emulator.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/ppsspp/manifest.json"
+    },
     "github.com/containerpak/prism-launcher": {
       "name": "Prism Launcher",
       "description": "Manage separate Minecraft installations, accounts and mod packs.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/prism-launcher/manifest.json"
+    },
+    "github.com/containerpak/protontricks": {
+      "name": "Protontricks",
+      "description": "Manage Winetricks components for Steam Proton prefixes.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/protontricks/manifest.json"
+    },
+    "github.com/containerpak/protonup-qt": {
+      "name": "ProtonUp-Qt",
+      "description": "Install and manage Proton-GE, Wine-GE and other compatibility tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/protonup-qt/manifest.json"
     },
     "github.com/containerpak/retroarch": {
       "name": "RetroArch",
@@ -167,6 +191,12 @@
       "description": "Unified launcher for Windows games with Proton outside Steam.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/umu/manifest.json"
+    },
+    "github.com/containerpak/xemu": {
+      "name": "xemu",
+      "description": "Play original Xbox games with a cross-platform emulator.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/xemu/manifest.json"
     }
   },
   "Graphics": {
@@ -231,6 +261,12 @@
       "description": "Online music streaming service",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
+    },
+    "github.com/containerpak/stremio": {
+      "name": "Stremio",
+      "description": "Discover, organize and watch video content in one place.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/stremio/manifest.json"
     },
     "github.com/containerpak/video-trimmer": {
       "name": "Video Trimmer",
@@ -308,11 +344,25 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/libreoffice/manifest.json"
     },
+    "github.com/containerpak/obsidian": {
+      "name": "Obsidian",
+      "description": "A private and flexible knowledge base for your notes.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/obsidian/manifest.json"
+    },
     "github.com/containerpak/onlyoffice": {
       "name": "ONLYOFFICE Desktop Editors",
       "description": "Edit text documents, spreadsheets, presentations, forms and PDF files.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/onlyoffice/manifest.json"
+    }
+  },
+  "Security": {
+    "github.com/containerpak/bitwarden": {
+      "name": "Bitwarden",
+      "description": "Securely manage passwords, passkeys and sensitive information.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Security/github/com/containerpak/bitwarden/manifest.json"
     }
   },
   "System": {
@@ -332,6 +382,12 @@
     }
   },
   "Web": {
+    "github.com/containerpak/brave": {
+      "name": "Brave",
+      "description": "Fast browser with privacy protections.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/brave/manifest.json"
+    },
     "github.com/containerpak/chrome": {
       "name": "Google Chrome",
       "description": "The Google Chrome web browser.",
@@ -343,6 +399,12 @@
       "description": "Fast, private and safe web browser.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/firefox/manifest.json"
+    },
+    "github.com/containerpak/zen": {
+      "name": "Zen Browser",
+      "description": "A fast, privacy-focused browser built on Firefox.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/zen/manifest.json"
     }
   }
 }

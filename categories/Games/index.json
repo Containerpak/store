@@ -1,9 +1,1 @@
-[
-  "github.com/containerpak/dolphin-emu",
-  "github.com/containerpak/heroic",
-  "github.com/containerpak/lutris",
-  "github.com/containerpak/prism-launcher",
-  "github.com/containerpak/retroarch",
-  "github.com/containerpak/steam",
-  "github.com/containerpak/umu"
-]
+["github.com/containerpak/dolphin-emu","github.com/containerpak/heroic","github.com/containerpak/lutris","github.com/containerpak/melonds","github.com/containerpak/ppsspp","github.com/containerpak/prism-launcher","github.com/containerpak/protontricks","github.com/containerpak/protonup-qt","github.com/containerpak/retroarch","github.com/containerpak/steam","github.com/containerpak/umu","github.com/containerpak/xemu"]

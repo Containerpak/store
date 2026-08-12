@@ -1,0 +1,5 @@
+{
+  "name": "ProtonUp-Qt",
+  "description": "Install and manage Proton-GE, Wine-GE and other compatibility tools.",
+  "branch": "main"
+}
