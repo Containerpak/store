@@ -1,0 +1,5 @@
+{
+  "name": "Ruby SDK",
+  "description": "Ruby interpreter, headers, RubyGems and Bundler.",
+  "branch": "main"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "OpenClaw",
+  "description": "Run the OpenClaw AI gateway and its local web interface.",
+  "branch": "main"
+}

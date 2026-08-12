@@ -1,0 +1,5 @@
+{
+  "name": "PHP SDK",
+  "description": "PHP CLI, Composer, FPM and common development extensions.",
+  "branch": "main"
+}

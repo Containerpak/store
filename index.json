@@ -1,16 +1,104 @@
 {
+  "AI-ML": {
+    "github.com/containerpak/claude-desktop": {
+      "name": "Claude",
+      "description": "Use Claude, Claude Code and local desktop features from one application.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-desktop/manifest.json"
+    },
+    "github.com/containerpak/openclaw": {
+      "name": "OpenClaw",
+      "description": "Run the OpenClaw AI gateway and its local web interface.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/openclaw/manifest.json"
+    }
+  },
+  "Database": {
+    "github.com/containerpak/dbgate": {
+      "name": "DbGate",
+      "description": "Manage SQL and NoSQL databases with one desktop client.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbgate/manifest.json"
+    }
+  },
   "Development": {
+    "github.com/containerpak/geany": {
+      "name": "Geany",
+      "description": "A fast editor with project and build support.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/geany/manifest.json"
+    },
+    "github.com/containerpak/gitnuro": {
+      "name": "Gitnuro",
+      "description": "A multiplatform Git client focused on speed and a clear interface.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/gitnuro/manifest.json"
+    },
     "github.com/containerpak/sdk-go": {
       "name": "Go SDK",
       "description": "The Go SDK for cpak provides tools and libraries to develop applications in Go.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-go/manifest.json"
     },
+    "github.com/containerpak/sdk-java": {
+      "name": "Java SDK",
+      "description": "OpenJDK compiler, runtime and development tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-java/manifest.json"
+    },
+    "github.com/containerpak/sdk-lua": {
+      "name": "Lua SDK",
+      "description": "Lua interpreter, compiler and development headers.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-lua/manifest.json"
+    },
+    "github.com/containerpak/sdk-native": {
+      "name": "Native SDK",
+      "description": "C and C++ compilers, build systems, debuggers and binary tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-native/manifest.json"
+    },
     "github.com/containerpak/sdk-node-lts": {
       "name": "Node LTS SDK",
       "description": "Build simple, secure, scalable systems with Node.js",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-node-lts/manifest.json"
+    },
+    "github.com/containerpak/sdk-php": {
+      "name": "PHP SDK",
+      "description": "PHP CLI, Composer, FPM and common development extensions.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-php/manifest.json"
+    },
+    "github.com/containerpak/sdk-python": {
+      "name": "Python SDK",
+      "description": "Python interpreter, headers, pip and virtual environment tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-python/manifest.json"
+    },
+    "github.com/containerpak/sdk-ruby": {
+      "name": "Ruby SDK",
+      "description": "Ruby interpreter, headers, RubyGems and Bundler.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-ruby/manifest.json"
+    },
+    "github.com/containerpak/sdk-rust": {
+      "name": "Rust SDK",
+      "description": "Rust compiler, Cargo, rustfmt and rustup.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-rust/manifest.json"
+    },
+    "github.com/containerpak/sdk-vala": {
+      "name": "Vala and GTK SDK",
+      "description": "Vala compiler with GTK, libadwaita and GObject development files.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-vala/manifest.json"
+    },
+    "github.com/containerpak/sdk-zig": {
+      "name": "Zig SDK",
+      "description": "Zig compiler and standard library.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-zig/manifest.json"
     },
     "github.com/containerpak/vscode": {
       "name": "Visual Studio Code",
@@ -64,6 +152,24 @@
     }
   },
   "Graphics": {
+    "github.com/containerpak/blender": {
+      "name": "Blender",
+      "description": "Create 3D models, animations, renders and video projects.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/blender/manifest.json"
+    },
+    "github.com/containerpak/flameshot": {
+      "name": "Flameshot",
+      "description": "Capture, annotate and share screenshots.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/flameshot/manifest.json"
+    },
+    "github.com/containerpak/fontforge": {
+      "name": "FontForge",
+      "description": "Create and edit outline and bitmap fonts.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/fontforge/manifest.json"
+    },
     "github.com/containerpak/gimp": {
       "name": "GIMP",
       "description": "Create images and edit photographs.",
@@ -75,6 +181,12 @@
       "description": "Create and edit vector graphics.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/inkscape/manifest.json"
+    },
+    "github.com/containerpak/upscaler": {
+      "name": "Upscaler",
+      "description": "Upscale and enhance images with Real-ESRGAN and Vulkan.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/upscaler/manifest.json"
     }
   },
   "Multimedia": {
@@ -83,6 +195,12 @@
       "description": "Record and edit audio with effects, plugins and multitrack tools.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/audacity/manifest.json"
+    },
+    "github.com/containerpak/kooha": {
+      "name": "Kooha",
+      "description": "Record the desktop and microphone with a focused GTK interface.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kooha/manifest.json"
     },
     "github.com/containerpak/obs-studio": {
       "name": "OBS Studio",
@@ -96,14 +214,38 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
     },
+    "github.com/containerpak/video-trimmer": {
+      "name": "Video Trimmer",
+      "description": "Cut videos without re-encoding and export the selected fragment.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/video-trimmer/manifest.json"
+    },
     "github.com/containerpak/vlc": {
       "name": "VLC",
       "description": "Play video, audio and network streams.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vlc/manifest.json"
+    },
+    "github.com/containerpak/vokoscreenng": {
+      "name": "vokoscreenNG",
+      "description": "Record the desktop, a window or a selected area with audio and camera support.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vokoscreenng/manifest.json"
     }
   },
   "Networking": {
+    "github.com/containerpak/acronis-connect": {
+      "name": "Acronis Connect Client",
+      "description": "Manage remote connections, credentials, screens and file transfers.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/acronis-connect/manifest.json"
+    },
+    "github.com/containerpak/discord": {
+      "name": "Discord",
+      "description": "Talk, chat and hang out with communities and friends.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/discord/manifest.json"
+    },
     "github.com/containerpak/localsend": {
       "name": "LocalSend",
       "description": "Share files securely with nearby devices over the local network.",
@@ -116,6 +258,18 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/qbittorrent/manifest.json"
     },
+    "github.com/containerpak/remmina": {
+      "name": "Remmina",
+      "description": "Connect to remote desktops over RDP, VNC and SSH.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/remmina/manifest.json"
+    },
+    "github.com/containerpak/scrcpy": {
+      "name": "scrcpy",
+      "description": "Display and control Android devices over USB or TCP/IP.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/scrcpy/manifest.json"
+    },
     "github.com/containerpak/telegram": {
       "name": "Telegram Desktop",
       "description": "Use Telegram messages, calls and file sharing from the desktop.",
@@ -124,11 +278,31 @@
     }
   },
   "Productivity": {
+    "github.com/containerpak/kate": {
+      "name": "Kate",
+      "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/kate/manifest.json"
+    },
     "github.com/containerpak/libreoffice": {
       "name": "LibreOffice",
       "description": "The free and open source office suite.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/libreoffice/manifest.json"
+    },
+    "github.com/containerpak/onlyoffice": {
+      "name": "ONLYOFFICE Desktop Editors",
+      "description": "Edit text documents, spreadsheets, presentations, forms and PDF files.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/onlyoffice/manifest.json"
+    }
+  },
+  "System": {
+    "github.com/containerpak/kitty": {
+      "name": "Kitty",
+      "description": "A GPU-accelerated terminal emulator with tabs and layouts.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/kitty/manifest.json"
     }
   },
   "Utilities": {

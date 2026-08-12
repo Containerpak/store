@@ -1,0 +1,5 @@
+{
+  "name": "scrcpy",
+  "description": "Display and control Android devices over USB or TCP/IP.",
+  "branch": "main"
+}

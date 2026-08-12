@@ -1,0 +1,5 @@
+{
+  "name": "Video Trimmer",
+  "description": "Cut videos without re-encoding and export the selected fragment.",
+  "branch": "main"
+}

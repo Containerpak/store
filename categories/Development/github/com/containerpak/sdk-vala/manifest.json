@@ -1,0 +1,5 @@
+{
+  "name": "Vala and GTK SDK",
+  "description": "Vala compiler with GTK, libadwaita and GObject development files.",
+  "branch": "main"
+}

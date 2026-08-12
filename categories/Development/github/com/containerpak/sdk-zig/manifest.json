@@ -1,0 +1,5 @@
+{
+  "name": "Zig SDK",
+  "description": "Zig compiler and standard library.",
+  "branch": "main"
+}

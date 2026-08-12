@@ -1,5 +1,16 @@
 [
+  "github.com/containerpak/geany",
+  "github.com/containerpak/gitnuro",
   "github.com/containerpak/sdk-go",
+  "github.com/containerpak/sdk-java",
+  "github.com/containerpak/sdk-lua",
+  "github.com/containerpak/sdk-native",
   "github.com/containerpak/sdk-node-lts",
+  "github.com/containerpak/sdk-php",
+  "github.com/containerpak/sdk-python",
+  "github.com/containerpak/sdk-ruby",
+  "github.com/containerpak/sdk-rust",
+  "github.com/containerpak/sdk-vala",
+  "github.com/containerpak/sdk-zig",
   "github.com/containerpak/vscode"
 ]

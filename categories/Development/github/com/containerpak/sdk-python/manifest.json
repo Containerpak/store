@@ -1,0 +1,5 @@
+{
+  "name": "Python SDK",
+  "description": "Python interpreter, headers, pip and virtual environment tools.",
+  "branch": "main"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Upscaler",
+  "description": "Upscale and enhance images with Real-ESRGAN and Vulkan.",
+  "branch": "main"
+}

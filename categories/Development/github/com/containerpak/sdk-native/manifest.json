@@ -1,0 +1,5 @@
+{
+  "name": "Native SDK",
+  "description": "C and C++ compilers, build systems, debuggers and binary tools.",
+  "branch": "main"
+}

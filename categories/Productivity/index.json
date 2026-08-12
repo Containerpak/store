@@ -1,3 +1,5 @@
 [
-  "github.com/containerpak/libreoffice"
+  "github.com/containerpak/kate",
+  "github.com/containerpak/libreoffice",
+  "github.com/containerpak/onlyoffice"
 ]

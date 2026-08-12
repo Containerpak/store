@@ -1,0 +1,5 @@
+{
+  "name": "Lua SDK",
+  "description": "Lua interpreter, compiler and development headers.",
+  "branch": "main"
+}

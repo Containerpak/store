@@ -1,6 +1,9 @@
 [
   "github.com/containerpak/audacity",
+  "github.com/containerpak/kooha",
   "github.com/containerpak/obs-studio",
   "github.com/containerpak/spotify",
-  "github.com/containerpak/vlc"
+  "github.com/containerpak/video-trimmer",
+  "github.com/containerpak/vlc",
+  "github.com/containerpak/vokoscreenng"
 ]

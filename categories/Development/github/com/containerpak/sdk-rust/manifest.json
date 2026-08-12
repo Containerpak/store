@@ -1,0 +1,5 @@
+{
+  "name": "Rust SDK",
+  "description": "Rust compiler, Cargo, rustfmt and rustup.",
+  "branch": "main"
+}

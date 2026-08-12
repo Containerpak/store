@@ -1,0 +1,5 @@
+{
+  "name": "Java SDK",
+  "description": "OpenJDK compiler, runtime and development tools.",
+  "branch": "main"
+}
