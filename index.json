@@ -40,6 +40,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/gitnuro/manifest.json"
     },
+    "github.com/containerpak/pnpm": {
+      "name": "pnpm",
+      "description": "Fast package manager with selectable Node.js runtimes.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/pnpm/manifest.json"
+    },
     "github.com/containerpak/podman-desktop": {
       "name": "Podman Desktop",
       "description": "Manage containers from a desktop interface.",

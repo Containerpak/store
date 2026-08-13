@@ -1,0 +1,5 @@
+{
+  "name": "pnpm",
+  "description": "Fast package manager with selectable Node.js runtimes.",
+  "branch": "main"
+}
