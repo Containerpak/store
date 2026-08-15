@@ -1,0 +1,5 @@
+{
+  "name": "Transmission",
+  "description": "Download and share files over BitTorrent.",
+  "branch": "main"
+}

@@ -6,6 +6,18 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-desktop/manifest.json"
     },
+    "github.com/containerpak/jan": {
+      "name": "Jan",
+      "description": "Run a private AI assistant on local models.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/jan/manifest.json"
+    },
+    "github.com/containerpak/lm-studio": {
+      "name": "LM Studio",
+      "description": "Run local language models from a desktop application.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/lm-studio/manifest.json"
+    },
     "github.com/containerpak/openclaw": {
       "name": "OpenClaw",
       "description": "Run the OpenClaw AI gateway and its local web interface.",
@@ -14,6 +26,12 @@
     }
   },
   "Database": {
+    "github.com/containerpak/dbeaver": {
+      "name": "DBeaver Community",
+      "description": "Work with SQL databases through a universal desktop client.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbeaver/manifest.json"
+    },
     "github.com/containerpak/dbgate": {
       "name": "DbGate",
       "description": "Manage SQL and NoSQL databases with one desktop client.",
@@ -22,6 +40,12 @@
     }
   },
   "Development": {
+    "github.com/containerpak/android-studio": {
+      "name": "Android Studio",
+      "description": "Build applications for Android devices.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/android-studio/manifest.json"
+    },
     "github.com/containerpak/arduino-ide": {
       "name": "Arduino IDE",
       "description": "Write, build and upload software for Arduino boards.",
@@ -34,11 +58,23 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/geany/manifest.json"
     },
+    "github.com/containerpak/github-desktop": {
+      "name": "GitHub Desktop",
+      "description": "Manage GitHub repositories from the desktop.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/github-desktop/manifest.json"
+    },
     "github.com/containerpak/gitnuro": {
       "name": "Gitnuro",
       "description": "A multiplatform Git client focused on speed and a clear interface.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/gitnuro/manifest.json"
+    },
+    "github.com/containerpak/godot": {
+      "name": "Godot Engine",
+      "description": "Create 2D and 3D games.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/godot/manifest.json"
     },
     "github.com/containerpak/pnpm": {
       "name": "pnpm",
@@ -51,6 +87,12 @@
       "description": "Manage containers from a desktop interface.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/podman-desktop/manifest.json"
+    },
+    "github.com/containerpak/postman": {
+      "name": "Postman",
+      "description": "Build, test and document APIs.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/postman/manifest.json"
     },
     "github.com/containerpak/sdk-go": {
       "name": "Go SDK",
@@ -147,14 +189,38 @@
       "description": "Edit code with a community build of VS Code.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/vscodium/manifest.json"
+    },
+    "github.com/containerpak/zed": {
+      "name": "Zed",
+      "description": "Edit code with a high-performance collaborative editor.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/zed/manifest.json"
     }
   },
   "Games": {
+    "github.com/containerpak/cemu": {
+      "name": "Cemu",
+      "description": "Play Wii U games with an open source emulator.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/cemu/manifest.json"
+    },
+    "github.com/containerpak/chiaki-ng": {
+      "name": "chiaki-ng",
+      "description": "Use PlayStation Remote Play from Linux.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/chiaki-ng/manifest.json"
+    },
     "github.com/containerpak/dolphin-emu": {
       "name": "Dolphin Emulator",
       "description": "Play Nintendo GameCube and Wii games on Linux.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/dolphin-emu/manifest.json"
+    },
+    "github.com/containerpak/flycast": {
+      "name": "Flycast",
+      "description": "Emulate Sega Dreamcast, Naomi and Atomiswave systems.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/flycast/manifest.json"
     },
     "github.com/containerpak/heroic": {
       "name": "Heroic Games Launcher",
@@ -168,11 +234,23 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lutris/manifest.json"
     },
+    "github.com/containerpak/mame": {
+      "name": "MAME",
+      "description": "Emulate arcade machines and historical computer systems.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/mame/manifest.json"
+    },
     "github.com/containerpak/melonds": {
       "name": "melonDS",
       "description": "Play Nintendo DS and DSi games with a free emulator.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/melonds/manifest.json"
+    },
+    "github.com/containerpak/minecraft": {
+      "name": "Minecraft",
+      "description": "Install and play Minecraft: Java Edition.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/minecraft/manifest.json"
     },
     "github.com/containerpak/modrinth": {
       "name": "Modrinth App",
@@ -221,6 +299,12 @@
       "description": "Run classic games through a unified frontend for libretro cores.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/retroarch/manifest.json"
+    },
+    "github.com/containerpak/rmg": {
+      "name": "Rosalie's Mupen GUI",
+      "description": "Play Nintendo 64 games with a graphical frontend.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/rmg/manifest.json"
     },
     "github.com/containerpak/runelite": {
       "name": "RuneLite",
@@ -314,6 +398,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/inkscape/manifest.json"
     },
+    "github.com/containerpak/krita": {
+      "name": "Krita",
+      "description": "Create digital paintings, illustrations and animations.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/krita/manifest.json"
+    },
     "github.com/containerpak/orcaslicer": {
       "name": "OrcaSlicer",
       "description": "Prepare models for FDM 3D printers.",
@@ -325,6 +415,12 @@
       "description": "Upscale and enhance images with Real-ESRGAN and Vulkan.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/upscaler/manifest.json"
+    },
+    "github.com/containerpak/upscayl": {
+      "name": "Upscayl",
+      "description": "Upscale images with local AI models.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/upscayl/manifest.json"
     }
   },
   "Multimedia": {
@@ -340,11 +436,35 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/freetube/manifest.json"
     },
+    "github.com/containerpak/handbrake": {
+      "name": "HandBrake",
+      "description": "Convert video from nearly any format.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/handbrake/manifest.json"
+    },
+    "github.com/containerpak/kdenlive": {
+      "name": "Kdenlive",
+      "description": "Edit video with a multi-track timeline and professional tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kdenlive/manifest.json"
+    },
+    "github.com/containerpak/kodi": {
+      "name": "Kodi",
+      "description": "Play and organize movies, music, television and photos.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kodi/manifest.json"
+    },
     "github.com/containerpak/kooha": {
       "name": "Kooha",
       "description": "Record the desktop and microphone with a focused GTK interface.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kooha/manifest.json"
+    },
+    "github.com/containerpak/mpv": {
+      "name": "mpv",
+      "description": "Play video and audio files with a scriptable media player.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/mpv/manifest.json"
     },
     "github.com/containerpak/obs-studio": {
       "name": "OBS Studio",
@@ -364,11 +484,23 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
     },
+    "github.com/containerpak/strawberry": {
+      "name": "Strawberry Music Player",
+      "description": "Play and organize a local music collection.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/strawberry/manifest.json"
+    },
     "github.com/containerpak/stremio": {
       "name": "Stremio",
       "description": "Discover, organize and watch video content in one place.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/stremio/manifest.json"
+    },
+    "github.com/containerpak/vacuumtube": {
+      "name": "VacuumTube",
+      "description": "Watch YouTube with a television-focused interface.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vacuumtube/manifest.json"
     },
     "github.com/containerpak/video-trimmer": {
       "name": "Video Trimmer",
@@ -396,11 +528,41 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/acronis-connect/manifest.json"
     },
+    "github.com/containerpak/anydesk": {
+      "name": "AnyDesk",
+      "description": "Connect to remote computers and provide remote support.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/anydesk/manifest.json"
+    },
     "github.com/containerpak/discord": {
       "name": "Discord",
       "description": "Talk, chat and hang out with communities and friends.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/discord/manifest.json"
+    },
+    "github.com/containerpak/element": {
+      "name": "Element",
+      "description": "Communicate securely over Matrix.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/element/manifest.json"
+    },
+    "github.com/containerpak/filezilla": {
+      "name": "FileZilla",
+      "description": "Transfer files with FTP, FTPS and SFTP.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/filezilla/manifest.json"
+    },
+    "github.com/containerpak/free-download-manager": {
+      "name": "Free Download Manager",
+      "description": "Organize and accelerate file downloads.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/free-download-manager/manifest.json"
+    },
+    "github.com/containerpak/jdownloader": {
+      "name": "JDownloader",
+      "description": "Manage direct downloads from many services.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/jdownloader/manifest.json"
     },
     "github.com/containerpak/localsend": {
       "name": "LocalSend",
@@ -413,6 +575,12 @@
       "description": "Use Mattermost workspaces from the desktop.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/mattermost/manifest.json"
+    },
+    "github.com/containerpak/parsec": {
+      "name": "Parsec",
+      "description": "Connect to remote computers with low-latency streaming.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/parsec/manifest.json"
     },
     "github.com/containerpak/qbittorrent": {
       "name": "qBittorrent",
@@ -444,6 +612,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/signal-desktop/manifest.json"
     },
+    "github.com/containerpak/slack": {
+      "name": "Slack",
+      "description": "Communicate with your team and organization.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/slack/manifest.json"
+    },
     "github.com/containerpak/teams-for-linux": {
       "name": "Portal for Teams",
       "description": "Use Microsoft Teams from a Linux desktop client.",
@@ -461,6 +635,12 @@
       "description": "Manage email, calendars and contacts.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/thunderbird/manifest.json"
+    },
+    "github.com/containerpak/transmission": {
+      "name": "Transmission",
+      "description": "Download and share files over BitTorrent.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/transmission/manifest.json"
     },
     "github.com/containerpak/vesktop": {
       "name": "Vesktop",
@@ -488,6 +668,30 @@
     }
   },
   "Productivity": {
+    "github.com/containerpak/anki": {
+      "name": "Anki",
+      "description": "Study with spaced-repetition flash cards.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/anki/manifest.json"
+    },
+    "github.com/containerpak/calibre": {
+      "name": "calibre",
+      "description": "Manage and read your e-book library.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/calibre/manifest.json"
+    },
+    "github.com/containerpak/foliate": {
+      "name": "Foliate",
+      "description": "Read EPUB, MOBI, AZW and comic book files.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/foliate/manifest.json"
+    },
+    "github.com/containerpak/joplin": {
+      "name": "Joplin",
+      "description": "Write notes and synchronize them across your devices.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/joplin/manifest.json"
+    },
     "github.com/containerpak/kate": {
       "name": "Kate",
       "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
@@ -499,6 +703,18 @@
       "description": "The free and open source office suite.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/libreoffice/manifest.json"
+    },
+    "github.com/containerpak/logseq": {
+      "name": "Logseq",
+      "description": "Connect notes and knowledge in an outliner.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/logseq/manifest.json"
+    },
+    "github.com/containerpak/nextcloud": {
+      "name": "Nextcloud Desktop",
+      "description": "Synchronize files with a Nextcloud server.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/nextcloud/manifest.json"
     },
     "github.com/containerpak/obsidian": {
       "name": "Obsidian",
@@ -512,11 +728,35 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/onlyoffice/manifest.json"
     },
+    "github.com/containerpak/pdfarranger": {
+      "name": "PDF Arranger",
+      "description": "Merge, split, rotate and rearrange PDF documents.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/pdfarranger/manifest.json"
+    },
+    "github.com/containerpak/proton-mail": {
+      "name": "Proton Mail",
+      "description": "Use Proton Mail from its official desktop application.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/proton-mail/manifest.json"
+    },
     "github.com/containerpak/standard-notes": {
       "name": "Standard Notes",
       "description": "Write and sync encrypted notes.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/standard-notes/manifest.json"
+    },
+    "github.com/containerpak/wps-office": {
+      "name": "WPS Office",
+      "description": "Create and edit documents, spreadsheets and presentations.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/wps-office/manifest.json"
+    },
+    "github.com/containerpak/xournalpp": {
+      "name": "Xournal++",
+      "description": "Take handwritten notes and annotate PDF documents.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/xournalpp/manifest.json"
     }
   },
   "Security": {
@@ -534,11 +774,41 @@
     }
   },
   "System": {
+    "github.com/containerpak/cpu-x": {
+      "name": "CPU-X",
+      "description": "Inspect processor, motherboard, memory and system information.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/cpu-x/manifest.json"
+    },
+    "github.com/containerpak/goverlay": {
+      "name": "Goverlay",
+      "description": "Configure MangoHud, vkBasalt and related gaming overlays.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/goverlay/manifest.json"
+    },
     "github.com/containerpak/kitty": {
       "name": "Kitty",
       "description": "A GPU-accelerated terminal emulator with tabs and layouts.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/kitty/manifest.json"
+    },
+    "github.com/containerpak/openrgb": {
+      "name": "OpenRGB",
+      "description": "Control RGB lighting without manufacturer software.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/openrgb/manifest.json"
+    },
+    "github.com/containerpak/solaar": {
+      "name": "Solaar",
+      "description": "Manage Logitech keyboards, mice and trackpads.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/solaar/manifest.json"
+    },
+    "github.com/containerpak/virt-manager": {
+      "name": "Virtual Machine Manager",
+      "description": "Manage virtual machines through libvirt.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/virt-manager/manifest.json"
     }
   },
   "Utilities": {
@@ -580,11 +850,41 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/firefox/manifest.json"
     },
+    "github.com/containerpak/floorp": {
+      "name": "Floorp",
+      "description": "Browse the web with a customizable Firefox-based browser.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/floorp/manifest.json"
+    },
     "github.com/containerpak/librewolf": {
       "name": "LibreWolf",
       "description": "Privacy-focused Firefox-based web browser.",
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/librewolf/manifest.json"
+    },
+    "github.com/containerpak/opera-gx": {
+      "name": "Opera GX",
+      "description": "Browse the web with gaming-focused controls and integrations.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/opera-gx/manifest.json"
+    },
+    "github.com/containerpak/opera": {
+      "name": "Opera",
+      "description": "Browse the web with built-in privacy and productivity tools.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/opera/manifest.json"
+    },
+    "github.com/containerpak/tor-browser-launcher": {
+      "name": "Tor Browser Launcher",
+      "description": "Download, verify and launch Tor Browser.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/tor-browser-launcher/manifest.json"
+    },
+    "github.com/containerpak/waterfox": {
+      "name": "Waterfox",
+      "description": "Browse the web with a privacy-focused Firefox-based browser.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/waterfox/manifest.json"
     },
     "github.com/containerpak/zen": {
       "name": "Zen Browser",

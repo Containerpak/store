@@ -1,0 +1,5 @@
+{
+  "name": "mpv",
+  "description": "Play video and audio files with a scriptable media player.",
+  "branch": "main"
+}

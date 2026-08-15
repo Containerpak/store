@@ -1,0 +1,5 @@
+{
+  "name": "Virtual Machine Manager",
+  "description": "Manage virtual machines through libvirt.",
+  "branch": "main"
+}

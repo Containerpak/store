@@ -1,0 +1,5 @@
+{
+  "name": "OpenRGB",
+  "description": "Control RGB lighting without manufacturer software.",
+  "branch": "main"
+}

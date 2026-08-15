@@ -1,7 +1,17 @@
 [
+  "github.com/containerpak/anki",
+  "github.com/containerpak/calibre",
+  "github.com/containerpak/foliate",
+  "github.com/containerpak/joplin",
   "github.com/containerpak/kate",
   "github.com/containerpak/libreoffice",
+  "github.com/containerpak/logseq",
+  "github.com/containerpak/nextcloud",
   "github.com/containerpak/obsidian",
   "github.com/containerpak/onlyoffice",
-  "github.com/containerpak/standard-notes"
+  "github.com/containerpak/pdfarranger",
+  "github.com/containerpak/proton-mail",
+  "github.com/containerpak/standard-notes",
+  "github.com/containerpak/wps-office",
+  "github.com/containerpak/xournalpp"
 ]

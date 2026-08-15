@@ -7,6 +7,8 @@
   "github.com/containerpak/freecad",
   "github.com/containerpak/gimp",
   "github.com/containerpak/inkscape",
+  "github.com/containerpak/krita",
   "github.com/containerpak/orcaslicer",
-  "github.com/containerpak/upscaler"
+  "github.com/containerpak/upscaler",
+  "github.com/containerpak/upscayl"
 ]

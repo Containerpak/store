@@ -1,0 +1,5 @@
+{
+  "name": "Parsec",
+  "description": "Connect to remote computers with low-latency streaming.",
+  "branch": "main"
+}

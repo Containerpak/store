@@ -1,3 +1,8 @@
 [
-  "github.com/containerpak/kitty"
+  "github.com/containerpak/cpu-x",
+  "github.com/containerpak/goverlay",
+  "github.com/containerpak/kitty",
+  "github.com/containerpak/openrgb",
+  "github.com/containerpak/solaar",
+  "github.com/containerpak/virt-manager"
 ]

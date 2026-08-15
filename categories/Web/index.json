@@ -3,6 +3,11 @@
   "github.com/containerpak/chrome",
   "github.com/containerpak/edge",
   "github.com/containerpak/firefox",
+  "github.com/containerpak/floorp",
   "github.com/containerpak/librewolf",
+  "github.com/containerpak/opera",
+  "github.com/containerpak/opera-gx",
+  "github.com/containerpak/tor-browser-launcher",
+  "github.com/containerpak/waterfox",
   "github.com/containerpak/zen"
 ]

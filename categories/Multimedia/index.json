@@ -1,11 +1,17 @@
 [
   "github.com/containerpak/audacity",
   "github.com/containerpak/freetube",
+  "github.com/containerpak/handbrake",
+  "github.com/containerpak/kdenlive",
+  "github.com/containerpak/kodi",
   "github.com/containerpak/kooha",
+  "github.com/containerpak/mpv",
   "github.com/containerpak/obs-studio",
   "github.com/containerpak/shotcut",
   "github.com/containerpak/spotify",
+  "github.com/containerpak/strawberry",
   "github.com/containerpak/stremio",
+  "github.com/containerpak/vacuumtube",
   "github.com/containerpak/video-trimmer",
   "github.com/containerpak/vlc",
   "github.com/containerpak/vokoscreenng"
