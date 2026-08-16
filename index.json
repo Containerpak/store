@@ -820,6 +820,12 @@
     }
   },
   "Utilities": {
+    "github.com/bottlesdevs/bottles-next": {
+      "name": "Bottles Next",
+      "description": "The next generation of Bottles for running Windows software on Linux.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles-next/manifest.json"
+    },
     "github.com/bottlesdevs/bottles": {
       "name": "Bottles",
       "description": "Run and manage Windows applications on Linux with Wine and Proton.",
