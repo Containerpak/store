@@ -39,6 +39,14 @@
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbgate/manifest.json"
     }
   },
+  "Desktop Environments": {
+    "github.com/singularityos-lab/singularity-desktop": {
+      "name": "Singularity Desktop",
+      "description": "Run Singularity Desktop as a complete Wayland session through cpak.",
+      "branch": "master",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Desktop%20Environments/github/com/singularityos-lab/singularity-desktop/manifest.json"
+    }
+  },
   "Development": {
     "github.com/containerpak/android-studio": {
       "name": "Android Studio",

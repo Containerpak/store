@@ -1,0 +1,5 @@
+{
+  "name": "Singularity Desktop",
+  "description": "Run Singularity Desktop as a complete Wayland session through cpak.",
+  "branch": "master"
+}

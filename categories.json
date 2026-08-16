@@ -7,6 +7,10 @@
         "icon": "storage",
         "color": "#2B6CB0"
     },
+    "Desktop Environments": {
+        "icon": "desktop_windows",
+        "color": "#64748B"
+    },
     "Development": {
         "icon": "code",
         "color": "#38A169"
