@@ -10,6 +10,7 @@
   "github.com/containerpak/mattermost",
   "github.com/containerpak/parsec",
   "github.com/containerpak/qbittorrent",
+  "github.com/containerpak/rambox",
   "github.com/containerpak/remmina",
   "github.com/containerpak/rustdesk",
   "github.com/containerpak/scrcpy",

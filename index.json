@@ -596,6 +596,12 @@
       "branch": "main",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/qbittorrent/manifest.json"
     },
+    "github.com/containerpak/rambox": {
+      "name": "Rambox",
+      "description": "Workspace simplifier: keep your messaging and work apps in one window.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/rambox/manifest.json"
+    },
     "github.com/containerpak/remmina": {
       "name": "Remmina",
       "description": "Connect to remote desktops over RDP, VNC and SSH.",
