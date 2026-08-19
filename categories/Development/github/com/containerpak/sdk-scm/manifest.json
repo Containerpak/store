@@ -1,0 +1,5 @@
+{
+    "name": "Source Control SDK",
+    "description": "git, git-lfs and the GitHub CLI for cpak development environments.",
+    "branch": "main"
+}

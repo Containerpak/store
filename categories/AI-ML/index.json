@@ -1,6 +1,1 @@
-[
-  "github.com/containerpak/claude-desktop",
-  "github.com/containerpak/jan",
-  "github.com/containerpak/lm-studio",
-  "github.com/containerpak/openclaw"
-]
+["github.com/containerpak/claude-code","github.com/containerpak/claude-desktop","github.com/containerpak/jan","github.com/containerpak/lm-studio","github.com/containerpak/openclaw"]

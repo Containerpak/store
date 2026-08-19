@@ -1,0 +1,5 @@
+{
+    "name": "Command Line SDK",
+    "description": "The search, text and archive tools a development environment is expected to have.",
+    "branch": "main"
+}

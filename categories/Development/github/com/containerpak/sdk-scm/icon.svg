@@ -1,0 +1,10 @@
+<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Source Control SDK</title>
+  <g stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M44 54 V 96" stroke="#4670EC"/>
+    <path d="M46 88 C 64 88, 78 74, 88 54" stroke="#4670EC"/>
+  </g>
+  <circle cx="44" cy="36" r="13" fill="#1E3A9A"/>
+  <circle cx="44" cy="114" r="13" fill="#1E3A9A"/>
+  <circle cx="94" cy="44" r="13" fill="#1E3A9A"/>
+</svg>
