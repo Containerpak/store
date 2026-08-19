@@ -12,6 +12,12 @@
       "branch": "",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-desktop/manifest.json"
     },
+    "github.com/containerpak/codex": {
+      "name": "Codex",
+      "description": "",
+      "branch": "",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/codex/manifest.json"
+    },
     "github.com/containerpak/jan": {
       "name": "Jan",
       "description": "",

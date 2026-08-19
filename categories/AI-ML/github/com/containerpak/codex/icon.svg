@@ -1,0 +1,8 @@
+<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Codex</title>
+  <g stroke="#4670EC" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M62 34 C 48 34, 50 58, 44 66 C 42 70, 40 72, 34 72 C 40 72, 42 74, 44 78 C 50 86, 48 110, 62 110"/>
+    <path d="M82 34 C 96 34, 94 58, 100 66 C 102 70, 104 72, 110 72 C 104 72, 102 74, 100 78 C 94 86, 96 110, 82 110"/>
+  </g>
+  <circle cx="72" cy="72" r="11" fill="#1E3A9A"/>
+</svg>

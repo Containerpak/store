@@ -1,0 +1,5 @@
+{
+    "name": "Codex",
+    "description": "OpenAI's coding agent for the terminal, with every cpak SDK available as an addon.",
+    "branch": "main"
+}
