@@ -210,6 +210,12 @@
       "branch": "",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-zig/manifest.json"
     },
+    "github.com/containerpak/unreal-engine": {
+      "name": "Unreal Engine",
+      "description": "Create games and interactive experiences with Unreal Engine.",
+      "branch": "main",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/unreal-engine/manifest.json"
+    },
     "github.com/containerpak/vscode": {
       "name": "Visual",
       "description": "Studio",
