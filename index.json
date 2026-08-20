@@ -1,945 +1,1251 @@
 {
   "AI-ML": {
     "github.com/containerpak/claude-code": {
-      "name": "Claude",
-      "description": "Code",
-      "branch": "",
+      "name": "Claude Code",
+      "description": "Anthropic's coding agent for the terminal, with every cpak SDK available as an addon.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.1.237",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-code/manifest.json"
     },
     "github.com/containerpak/claude-desktop": {
       "name": "Claude",
-      "description": "",
-      "branch": "",
+      "description": "Use Claude, Claude Code and local desktop features from one application.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.26832.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-desktop/manifest.json"
     },
     "github.com/containerpak/codex": {
       "name": "Codex",
-      "description": "",
-      "branch": "",
+      "description": "OpenAI's coding agent for the terminal, with every cpak SDK available as an addon.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.148.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/codex/manifest.json"
     },
     "github.com/containerpak/jan": {
       "name": "Jan",
-      "description": "",
-      "branch": "",
+      "description": "Run a private AI assistant on local models.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.8.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/jan/manifest.json"
     },
     "github.com/containerpak/lm-studio": {
-      "name": "LM",
-      "description": "Studio",
-      "branch": "",
+      "name": "LM Studio",
+      "description": "Run local language models from a desktop application.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.4.21-2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/lm-studio/manifest.json"
     },
     "github.com/containerpak/openclaw": {
       "name": "OpenClaw",
-      "description": "",
-      "branch": "",
+      "description": "Run the OpenClaw AI gateway and its local web interface.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2026.7.2-beta.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/openclaw/manifest.json"
     }
   },
   "Database": {
     "github.com/containerpak/dbeaver": {
-      "name": "DBeaver",
-      "description": "Community",
-      "branch": "",
+      "name": "DBeaver Community",
+      "description": "Work with SQL databases through a universal desktop client.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.1.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbeaver/manifest.json"
     },
     "github.com/containerpak/dbgate": {
       "name": "DbGate",
-      "description": "",
-      "branch": "",
+      "description": "Manage SQL and NoSQL databases with one desktop client.",
+      "branch": "main",
+      "ref": "main",
+      "version": "7.2.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbgate/manifest.json"
     }
   },
   "Desktop Environments": {
     "github.com/singularityos-lab/singularity-desktop": {
-      "name": "Singularity",
-      "description": "Desktop",
-      "branch": "",
+      "name": "Singularity Desktop",
+      "description": "Run Singularity Desktop as a complete Wayland session through cpak.",
+      "branch": "master",
+      "ref": "master",
+      "version": "0.1.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Desktop Environments/github/com/singularityos-lab/singularity-desktop/manifest.json"
     }
   },
   "Development": {
     "github.com/containerpak/android-studio": {
-      "name": "Android",
-      "description": "Studio",
-      "branch": "",
+      "name": "Android Studio",
+      "description": "Build applications for Android devices.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2026.1.3.8",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/android-studio/manifest.json"
     },
     "github.com/containerpak/arduino-ide": {
-      "name": "Arduino",
-      "description": "IDE",
-      "branch": "",
+      "name": "Arduino IDE",
+      "description": "Write, build and upload software for Arduino boards.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.3.10",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/arduino-ide/manifest.json"
     },
     "github.com/containerpak/geany": {
       "name": "Geany",
-      "description": "",
-      "branch": "",
+      "description": "A fast editor with project and build support.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/geany/manifest.json"
     },
     "github.com/containerpak/github-desktop": {
-      "name": "GitHub",
-      "description": "Desktop",
-      "branch": "",
+      "name": "GitHub Desktop",
+      "description": "Manage GitHub repositories from the desktop.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.4.13-linux1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/github-desktop/manifest.json"
     },
     "github.com/containerpak/gitnuro": {
       "name": "Gitnuro",
-      "description": "",
-      "branch": "",
+      "description": "A multiplatform Git client focused on speed and a clear interface.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.5.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/gitnuro/manifest.json"
     },
     "github.com/containerpak/godot": {
-      "name": "Godot",
-      "description": "Engine",
-      "branch": "",
+      "name": "Godot Engine",
+      "description": "Create 2D and 3D games.",
+      "branch": "main",
+      "ref": "main",
+      "version": "4.7.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/godot/manifest.json"
     },
     "github.com/containerpak/pnpm": {
       "name": "pnpm",
-      "description": "",
-      "branch": "",
+      "description": "Fast package manager with selectable Node.js runtimes.",
+      "branch": "main",
+      "ref": "main",
+      "version": "11.21.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/pnpm/manifest.json"
     },
     "github.com/containerpak/podman-desktop": {
-      "name": "Podman",
-      "description": "Desktop",
-      "branch": "",
+      "name": "Podman Desktop",
+      "description": "Manage containers from a desktop interface.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.29.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/podman-desktop/manifest.json"
     },
     "github.com/containerpak/postman": {
       "name": "Postman",
-      "description": "",
-      "branch": "",
+      "description": "Build, test and document APIs.",
+      "branch": "main",
+      "ref": "main",
+      "version": "12.23.7",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/postman/manifest.json"
     },
     "github.com/containerpak/sdk-cli": {
-      "name": "Command",
-      "description": "Line",
-      "branch": "SDK",
+      "name": "Command Line SDK",
+      "description": "The search, text and archive tools a development environment is expected to have.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.0.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-cli/manifest.json"
     },
     "github.com/containerpak/sdk-go": {
-      "name": "Go",
-      "description": "SDK",
-      "branch": "",
+      "name": "Go SDK",
+      "description": "The Go SDK for cpak provides tools and libraries to develop applications in Go.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.26.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-go/manifest.json"
     },
     "github.com/containerpak/sdk-java": {
-      "name": "Java",
-      "description": "SDK",
-      "branch": "",
+      "name": "Java SDK",
+      "description": "OpenJDK compiler, runtime and development tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "25.0.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-java/manifest.json"
     },
     "github.com/containerpak/sdk-lua": {
-      "name": "Lua",
-      "description": "SDK",
-      "branch": "",
+      "name": "Lua SDK",
+      "description": "Lua interpreter, compiler and development headers.",
+      "branch": "main",
+      "ref": "main",
+      "version": "5.4.8",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-lua/manifest.json"
     },
     "github.com/containerpak/sdk-mingw": {
-      "name": "MinGW",
-      "description": "SDK",
-      "branch": "",
+      "name": "MinGW SDK",
+      "description": "MinGW-w64 C and C++ cross-compilers for 32-bit and 64-bit Windows targets.",
+      "branch": "main",
+      "ref": "main",
+      "version": "13.2.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-mingw/manifest.json"
     },
     "github.com/containerpak/sdk-native": {
-      "name": "Native",
-      "description": "SDK",
-      "branch": "",
+      "name": "Native SDK",
+      "description": "C and C++ compilers, build systems, debuggers and binary tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.04",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-native/manifest.json"
     },
     "github.com/containerpak/sdk-node-lts": {
-      "name": "Node",
-      "description": "LTS",
-      "branch": "SDK",
+      "name": "Node LTS SDK",
+      "description": "Build simple, secure, scalable systems with Node.js",
+      "branch": "main",
+      "ref": "main",
+      "version": "24.19.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-node-lts/manifest.json"
     },
     "github.com/containerpak/sdk-php": {
-      "name": "PHP",
-      "description": "SDK",
-      "branch": "",
+      "name": "PHP SDK",
+      "description": "PHP CLI, Composer, FPM and common development extensions.",
+      "branch": "main",
+      "ref": "main",
+      "version": "8.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-php/manifest.json"
     },
     "github.com/containerpak/sdk-python": {
-      "name": "Python",
-      "description": "SDK",
-      "branch": "",
+      "name": "Python SDK",
+      "description": "Python interpreter, headers, pip and virtual environment tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.14.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-python/manifest.json"
     },
     "github.com/containerpak/sdk-qt": {
-      "name": "Qt",
-      "description": "SDK",
-      "branch": "",
+      "name": "Qt SDK",
+      "description": "Qt 6 build tools with Core, Widgets and WebEngine development files.",
+      "branch": "main",
+      "ref": "main",
+      "version": "6.10.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-qt/manifest.json"
     },
     "github.com/containerpak/sdk-ruby": {
-      "name": "Ruby",
-      "description": "SDK",
-      "branch": "",
+      "name": "Ruby SDK",
+      "description": "Ruby interpreter, headers, RubyGems and Bundler.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-ruby/manifest.json"
     },
     "github.com/containerpak/sdk-rust": {
-      "name": "Rust",
-      "description": "SDK",
-      "branch": "",
+      "name": "Rust SDK",
+      "description": "Rust compiler, Cargo, rustfmt and rustup.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.95.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-rust/manifest.json"
     },
     "github.com/containerpak/sdk-scm": {
-      "name": "Source",
-      "description": "Control",
-      "branch": "SDK",
+      "name": "Source Control SDK",
+      "description": "git, git-lfs and the GitHub CLI for cpak development environments.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.0.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-scm/manifest.json"
     },
     "github.com/containerpak/sdk-vala": {
-      "name": "Vala",
-      "description": "and",
-      "branch": "GTK",
+      "name": "Vala and GTK SDK",
+      "description": "Vala compiler with GTK, libadwaita and GObject development files.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.56.18",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-vala/manifest.json"
     },
     "github.com/containerpak/sdk-vulkan": {
-      "name": "Vulkan",
-      "description": "and",
-      "branch": "Shader",
+      "name": "Vulkan and Shader SDK",
+      "description": "Vulkan headers, diagnostics, glslang and SPIR-V development tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.4.341",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-vulkan/manifest.json"
     },
     "github.com/containerpak/sdk-zig": {
-      "name": "Zig",
-      "description": "SDK",
-      "branch": "",
+      "name": "Zig SDK",
+      "description": "Zig compiler and standard library.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.16.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-zig/manifest.json"
     },
     "github.com/containerpak/unreal-engine": {
       "name": "Unreal Engine",
       "description": "Create games and interactive experiences with Unreal Engine.",
       "branch": "main",
+      "ref": "main",
+      "version": "5.8.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/unreal-engine/manifest.json"
     },
     "github.com/containerpak/vscode": {
-      "name": "Visual",
-      "description": "Studio",
-      "branch": "Code",
+      "name": "Visual Studio Code",
+      "description": "Free, lightweight, extensible code editor for building virtually everything.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.132.0-1785860022",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/vscode/manifest.json"
     },
     "github.com/containerpak/vscodium": {
       "name": "VSCodium",
-      "description": "",
-      "branch": "",
+      "description": "Edit code with a community build of VS Code.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.126.04524",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/vscodium/manifest.json"
     },
     "github.com/containerpak/zed": {
       "name": "Zed",
-      "description": "",
-      "branch": "",
+      "description": "Edit code with a high-performance collaborative editor.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.15.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/zed/manifest.json"
     }
   },
   "Games": {
     "github.com/containerpak/cemu": {
       "name": "Cemu",
-      "description": "",
-      "branch": "",
+      "description": "Play Wii U games with an open source emulator.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.6",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/cemu/manifest.json"
     },
     "github.com/containerpak/chiaki-ng": {
       "name": "chiaki-ng",
-      "description": "",
-      "branch": "",
+      "description": "Use PlayStation Remote Play from Linux.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.10.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/chiaki-ng/manifest.json"
     },
     "github.com/containerpak/dolphin-emu": {
-      "name": "Dolphin",
-      "description": "Emulator",
-      "branch": "",
+      "name": "Dolphin Emulator",
+      "description": "Play Nintendo GameCube and Wii games on Linux.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2512",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/dolphin-emu/manifest.json"
     },
     "github.com/containerpak/flycast": {
       "name": "Flycast",
-      "description": "",
-      "branch": "",
+      "description": "Emulate Sega Dreamcast, Naomi and Atomiswave systems.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.6",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/flycast/manifest.json"
     },
     "github.com/containerpak/heroic": {
-      "name": "Heroic",
-      "description": "Games",
-      "branch": "Launcher",
+      "name": "Heroic Games Launcher",
+      "description": "Play and manage games from Epic Games, GOG and Amazon Prime Gaming.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.22.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/heroic/manifest.json"
     },
     "github.com/containerpak/lutris": {
       "name": "Lutris",
-      "description": "",
-      "branch": "",
+      "description": "Lutris is a video game preservation platform aiming to keep your video game collection up and running for the years to come.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.5.22",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lutris/manifest.json"
     },
     "github.com/containerpak/mame": {
       "name": "MAME",
-      "description": "",
-      "branch": "",
+      "description": "Emulate arcade machines and historical computer systems.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.285",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/mame/manifest.json"
     },
     "github.com/containerpak/melonds": {
       "name": "melonDS",
-      "description": "",
-      "branch": "",
+      "description": "Play Nintendo DS and DSi games with a free emulator.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/melonds/manifest.json"
     },
     "github.com/containerpak/minecraft": {
       "name": "Minecraft",
-      "description": "",
-      "branch": "",
+      "description": "Install and play Minecraft: Java Edition.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.0.1221",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/minecraft/manifest.json"
     },
     "github.com/containerpak/modrinth": {
-      "name": "Modrinth",
-      "description": "App",
-      "branch": "",
+      "name": "Modrinth App",
+      "description": "Install and manage Minecraft content.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.17.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/modrinth/manifest.json"
     },
     "github.com/containerpak/moonlight": {
       "name": "Moonlight",
-      "description": "",
-      "branch": "",
+      "description": "Stream games from another computer with low latency.",
+      "branch": "main",
+      "ref": "main",
+      "version": "6.1.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/moonlight/manifest.json"
     },
     "github.com/containerpak/pcsx2": {
       "name": "PCSX2",
-      "description": "",
-      "branch": "",
+      "description": "Play PlayStation 2 games on Linux.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.6.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/pcsx2/manifest.json"
     },
     "github.com/containerpak/ppsspp": {
       "name": "PPSSPP",
-      "description": "",
-      "branch": "",
+      "description": "Play PSP games on Linux with a fast and accurate emulator.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.20.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/ppsspp/manifest.json"
     },
     "github.com/containerpak/prism-launcher": {
-      "name": "Prism",
-      "description": "Launcher",
-      "branch": "",
+      "name": "Prism Launcher",
+      "description": "Manage separate Minecraft installations, accounts and mod packs.",
+      "branch": "main",
+      "ref": "main",
+      "version": "10.0.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/prism-launcher/manifest.json"
     },
     "github.com/containerpak/protontricks": {
       "name": "Protontricks",
-      "description": "",
-      "branch": "",
+      "description": "Manage Winetricks components for Steam Proton prefixes.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.14.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/protontricks/manifest.json"
     },
     "github.com/containerpak/protonup-qt": {
       "name": "ProtonUp-Qt",
-      "description": "",
-      "branch": "",
+      "description": "Install and manage Proton-GE, Wine-GE and other compatibility tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.15.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/protonup-qt/manifest.json"
     },
     "github.com/containerpak/retroarch": {
       "name": "RetroArch",
-      "description": "",
-      "branch": "",
+      "description": "Run classic games through a unified frontend for libretro cores.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.22.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/retroarch/manifest.json"
     },
     "github.com/containerpak/rmg": {
-      "name": "Rosalie's",
-      "description": "Mupen",
-      "branch": "GUI",
+      "name": "Rosalie's Mupen GUI",
+      "description": "Play Nintendo 64 games with a graphical frontend.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.9.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/rmg/manifest.json"
     },
     "github.com/containerpak/runelite": {
       "name": "RuneLite",
-      "description": "",
-      "branch": "",
+      "description": "Play Old School RuneScape with an open source client.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.8.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/runelite/manifest.json"
     },
     "github.com/containerpak/scummvm": {
       "name": "ScummVM",
-      "description": "",
-      "branch": "",
+      "description": "Engine for classic adventure games.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2026.3.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/scummvm/manifest.json"
     },
     "github.com/containerpak/steam": {
       "name": "Steam",
-      "description": "",
-      "branch": "",
+      "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.0.0.87",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/steam/manifest.json"
     },
     "github.com/containerpak/sunshine": {
       "name": "Sunshine",
-      "description": "",
-      "branch": "",
+      "description": "Stream games and desktops to Moonlight clients.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2026.516.143833",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/sunshine/manifest.json"
     },
     "github.com/containerpak/supermodel": {
       "name": "Supermodel",
-      "description": "",
-      "branch": "",
+      "description": "Sega Model 3 arcade emulator.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.3a-20260726-git-b7d8acd",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/supermodel/manifest.json"
     },
     "github.com/containerpak/umu": {
       "name": "UMU",
-      "description": "",
-      "branch": "",
+      "description": "Unified launcher for Windows games with Proton outside Steam.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.4.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/umu/manifest.json"
     },
     "github.com/containerpak/xemu": {
       "name": "xemu",
-      "description": "",
-      "branch": "",
+      "description": "Play original Xbox games with a cross-platform emulator.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.8.136",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/xemu/manifest.json"
     }
   },
   "Graphics": {
     "github.com/containerpak/bambu-studio": {
-      "name": "Bambu",
-      "description": "Studio",
-      "branch": "",
+      "name": "Bambu Studio",
+      "description": "Prepare and manage models for 3D printing.",
+      "branch": "main",
+      "ref": "main",
+      "version": "02.07.01.62",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/bambu-studio/manifest.json"
     },
     "github.com/containerpak/blender": {
       "name": "Blender",
-      "description": "",
-      "branch": "",
+      "description": "Create 3D models, animations, renders and video projects.",
+      "branch": "main",
+      "ref": "main",
+      "version": "5.0.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/blender/manifest.json"
     },
     "github.com/containerpak/darktable": {
       "name": "darktable",
-      "description": "",
-      "branch": "",
+      "description": "Develop and organize digital photographs.",
+      "branch": "main",
+      "ref": "main",
+      "version": "5.6.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/darktable/manifest.json"
     },
     "github.com/containerpak/flameshot": {
       "name": "Flameshot",
-      "description": "",
-      "branch": "",
+      "description": "Capture, annotate and share screenshots.",
+      "branch": "main",
+      "ref": "main",
+      "version": "14.0.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/flameshot/manifest.json"
     },
     "github.com/containerpak/fontforge": {
       "name": "FontForge",
-      "description": "",
-      "branch": "",
+      "description": "Create and edit outline and bitmap fonts.",
+      "branch": "main",
+      "ref": "main",
+      "version": "20230101",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/fontforge/manifest.json"
     },
     "github.com/containerpak/freecad": {
       "name": "FreeCAD",
-      "description": "",
-      "branch": "",
+      "description": "Parametric 3D CAD modeler.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.1.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/freecad/manifest.json"
     },
     "github.com/containerpak/gimp": {
       "name": "GIMP",
-      "description": "",
-      "branch": "",
+      "description": "Create images and edit photographs.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.2.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/gimp/manifest.json"
     },
     "github.com/containerpak/inkscape": {
       "name": "Inkscape",
-      "description": "",
-      "branch": "",
+      "description": "Create and edit vector graphics.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.4.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/inkscape/manifest.json"
     },
     "github.com/containerpak/krita": {
       "name": "Krita",
-      "description": "",
-      "branch": "",
+      "description": "Create digital paintings, illustrations and animations.",
+      "branch": "main",
+      "ref": "main",
+      "version": "6.0.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/krita/manifest.json"
     },
     "github.com/containerpak/orcaslicer": {
       "name": "OrcaSlicer",
-      "description": "",
-      "branch": "",
+      "description": "Prepare models for FDM 3D printers.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.4.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/orcaslicer/manifest.json"
     },
     "github.com/containerpak/upscaler": {
       "name": "Upscaler",
-      "description": "",
-      "branch": "",
+      "description": "Upscale and enhance images with Real-ESRGAN and Vulkan.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.6.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/upscaler/manifest.json"
     },
     "github.com/containerpak/upscayl": {
       "name": "Upscayl",
-      "description": "",
-      "branch": "",
+      "description": "Upscale images with local AI models.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.15.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Graphics/github/com/containerpak/upscayl/manifest.json"
     }
   },
   "Multimedia": {
     "github.com/containerpak/audacity": {
       "name": "Audacity",
-      "description": "",
-      "branch": "",
+      "description": "Record and edit audio with effects, plugins and multitrack tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.7.7",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/audacity/manifest.json"
     },
     "github.com/containerpak/freetube": {
       "name": "FreeTube",
-      "description": "",
-      "branch": "",
+      "description": "Private YouTube desktop client.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.25.2-beta",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/freetube/manifest.json"
     },
     "github.com/containerpak/handbrake": {
       "name": "HandBrake",
-      "description": "",
-      "branch": "",
+      "description": "Convert video from nearly any format.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.11.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/handbrake/manifest.json"
     },
     "github.com/containerpak/kdenlive": {
       "name": "Kdenlive",
-      "description": "",
-      "branch": "",
+      "description": "Edit video with a multi-track timeline and professional tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "25.12.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kdenlive/manifest.json"
     },
     "github.com/containerpak/kodi": {
       "name": "Kodi",
-      "description": "",
-      "branch": "",
+      "description": "Play and organize movies, music, television and photos.",
+      "branch": "main",
+      "ref": "main",
+      "version": "21.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kodi/manifest.json"
     },
     "github.com/containerpak/kooha": {
       "name": "Kooha",
-      "description": "",
-      "branch": "",
+      "description": "Record the desktop and microphone with a focused GTK interface.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.3.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/kooha/manifest.json"
     },
     "github.com/containerpak/mpv": {
       "name": "mpv",
-      "description": "",
-      "branch": "",
+      "description": "Play video and audio files with a scriptable media player.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.41.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/mpv/manifest.json"
     },
     "github.com/containerpak/obs-studio": {
-      "name": "OBS",
-      "description": "Studio",
-      "branch": "",
+      "name": "OBS Studio",
+      "description": "Record video and stream live.",
+      "branch": "main",
+      "ref": "main",
+      "version": "32.1.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/obs-studio/manifest.json"
     },
     "github.com/containerpak/shotcut": {
       "name": "Shotcut",
-      "description": "",
-      "branch": "",
+      "description": "Edit video with a cross-platform editor.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.8.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/shotcut/manifest.json"
     },
     "github.com/containerpak/spotify": {
       "name": "Spotify",
-      "description": "",
-      "branch": "",
+      "description": "Online music streaming service",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.2.92.147.g5b8f9367",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
     },
     "github.com/containerpak/strawberry": {
-      "name": "Strawberry",
-      "description": "Music",
-      "branch": "Player",
+      "name": "Strawberry Music Player",
+      "description": "Play and organize a local music collection.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.2.18",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/strawberry/manifest.json"
     },
     "github.com/containerpak/stremio": {
       "name": "Stremio",
-      "description": "",
-      "branch": "",
+      "description": "Discover, organize and watch video content in one place.",
+      "branch": "main",
+      "ref": "main",
+      "version": "4.4.168",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/stremio/manifest.json"
     },
     "github.com/containerpak/vacuumtube": {
       "name": "VacuumTube",
-      "description": "",
-      "branch": "",
+      "description": "Watch YouTube with a television-focused interface.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.8.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vacuumtube/manifest.json"
     },
     "github.com/containerpak/video-trimmer": {
-      "name": "Video",
-      "description": "Trimmer",
-      "branch": "",
+      "name": "Video Trimmer",
+      "description": "Cut videos without re-encoding and export the selected fragment.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.03.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/video-trimmer/manifest.json"
     },
     "github.com/containerpak/vlc": {
       "name": "VLC",
-      "description": "",
-      "branch": "",
+      "description": "Play video, audio and network streams.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.0.23",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vlc/manifest.json"
     },
     "github.com/containerpak/vokoscreenng": {
       "name": "vokoscreenNG",
-      "description": "",
-      "branch": "",
+      "description": "Record the desktop, a window or a selected area with audio and camera support.",
+      "branch": "main",
+      "ref": "main",
+      "version": "4.10.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/vokoscreenng/manifest.json"
     }
   },
   "Networking": {
     "github.com/containerpak/acronis-connect": {
-      "name": "Acronis",
-      "description": "Connect",
-      "branch": "Client",
+      "name": "Acronis Connect Client",
+      "description": "Manage remote connections, credentials, screens and file transfers.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.1-25041",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/acronis-connect/manifest.json"
     },
     "github.com/containerpak/anydesk": {
       "name": "AnyDesk",
-      "description": "",
-      "branch": "",
+      "description": "Connect to remote computers and provide remote support.",
+      "branch": "main",
+      "ref": "main",
+      "version": "8.0.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/anydesk/manifest.json"
     },
     "github.com/containerpak/discord": {
       "name": "Discord",
-      "description": "",
-      "branch": "",
+      "description": "Talk, chat and hang out with communities and friends.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.0.153",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/discord/manifest.json"
     },
     "github.com/containerpak/element": {
       "name": "Element",
-      "description": "",
-      "branch": "",
+      "description": "Communicate securely over Matrix.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.12.25",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/element/manifest.json"
     },
     "github.com/containerpak/filezilla": {
       "name": "FileZilla",
-      "description": "",
-      "branch": "",
+      "description": "Transfer files with FTP, FTPS and SFTP.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.69.6",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/filezilla/manifest.json"
     },
     "github.com/containerpak/free-download-manager": {
-      "name": "Free",
-      "description": "Download",
-      "branch": "Manager",
+      "name": "Free Download Manager",
+      "description": "Organize and accelerate file downloads.",
+      "branch": "main",
+      "ref": "main",
+      "version": "6.34.2.6926",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/free-download-manager/manifest.json"
     },
     "github.com/containerpak/jdownloader": {
       "name": "JDownloader",
-      "description": "",
-      "branch": "",
+      "description": "Manage direct downloads from many services.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/jdownloader/manifest.json"
     },
     "github.com/containerpak/localsend": {
       "name": "LocalSend",
-      "description": "",
-      "branch": "",
+      "description": "Share files securely with nearby devices over the local network.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.18.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/localsend/manifest.json"
     },
     "github.com/containerpak/mattermost": {
       "name": "Mattermost",
-      "description": "",
-      "branch": "",
+      "description": "Use Mattermost workspaces from the desktop.",
+      "branch": "main",
+      "ref": "main",
+      "version": "6.2.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/mattermost/manifest.json"
     },
     "github.com/containerpak/parsec": {
       "name": "Parsec",
-      "description": "",
-      "branch": "",
+      "description": "Connect to remote computers with low-latency streaming.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.9.9",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/parsec/manifest.json"
     },
     "github.com/containerpak/qbittorrent": {
       "name": "qBittorrent",
-      "description": "",
-      "branch": "",
+      "description": "Download and manage torrents with a native desktop client.",
+      "branch": "main",
+      "ref": "main",
+      "version": "5.1.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/qbittorrent/manifest.json"
     },
     "github.com/containerpak/rambox": {
       "name": "Rambox",
-      "description": "",
-      "branch": "",
+      "description": "Workspace simplifier: keep your messaging and work apps in one window.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.7.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/rambox/manifest.json"
     },
     "github.com/containerpak/remmina": {
       "name": "Remmina",
-      "description": "",
-      "branch": "",
+      "description": "Connect to remote desktops over RDP, VNC and SSH.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.4.43",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/remmina/manifest.json"
     },
     "github.com/containerpak/rustdesk": {
       "name": "RustDesk",
-      "description": "",
-      "branch": "",
+      "description": "Remote desktop software for secure connections.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.4.9",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/rustdesk/manifest.json"
     },
     "github.com/containerpak/scrcpy": {
       "name": "scrcpy",
-      "description": "",
-      "branch": "",
+      "description": "Display and control Android devices over USB or TCP/IP.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.3.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/scrcpy/manifest.json"
     },
     "github.com/containerpak/signal-desktop": {
       "name": "Signal",
-      "description": "",
-      "branch": "",
+      "description": "Send private messages and make secure calls.",
+      "branch": "main",
+      "ref": "main",
+      "version": "8.22.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/signal-desktop/manifest.json"
     },
     "github.com/containerpak/slack": {
       "name": "Slack",
-      "description": "",
-      "branch": "",
+      "description": "Communicate with your team and organization.",
+      "branch": "main",
+      "ref": "main",
+      "version": "4.51.180",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/slack/manifest.json"
     },
     "github.com/containerpak/teams-for-linux": {
-      "name": "Portal",
-      "description": "for",
-      "branch": "Teams",
+      "name": "Portal for Teams",
+      "description": "Use Microsoft Teams from a Linux desktop client.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.14.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/teams-for-linux/manifest.json"
     },
     "github.com/containerpak/telegram": {
-      "name": "Telegram",
-      "description": "Desktop",
-      "branch": "",
+      "name": "Telegram Desktop",
+      "description": "Use Telegram messages, calls and file sharing from the desktop.",
+      "branch": "main",
+      "ref": "main",
+      "version": "7.0.9",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/telegram/manifest.json"
     },
     "github.com/containerpak/thunderbird": {
       "name": "Thunderbird",
-      "description": "",
-      "branch": "",
+      "description": "Manage email, calendars and contacts.",
+      "branch": "main",
+      "ref": "main",
+      "version": "stable",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/thunderbird/manifest.json"
     },
     "github.com/containerpak/transmission": {
       "name": "Transmission",
-      "description": "",
-      "branch": "",
+      "description": "Download and share files over BitTorrent.",
+      "branch": "main",
+      "ref": "main",
+      "version": "4.1.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/transmission/manifest.json"
     },
     "github.com/containerpak/vesktop": {
       "name": "Vesktop",
-      "description": "",
-      "branch": "",
+      "description": "Desktop Discord client with Vencord support.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.6.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/vesktop/manifest.json"
     },
     "github.com/containerpak/vivaldi": {
       "name": "Vivaldi",
-      "description": "",
-      "branch": "",
+      "description": "Browse the web with a customizable browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "8.1.4087.64",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/vivaldi/manifest.json"
     },
     "github.com/containerpak/zapzap": {
       "name": "ZapZap",
-      "description": "",
-      "branch": "",
+      "description": "WhatsApp desktop application written with PyQt6.",
+      "branch": "main",
+      "ref": "main",
+      "version": "4.5.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/zapzap/manifest.json"
     },
     "github.com/containerpak/zoom": {
       "name": "Zoom",
-      "description": "",
-      "branch": "",
+      "description": "Join video meetings and collaborate online.",
+      "branch": "main",
+      "ref": "main",
+      "version": "7.1.5.4332",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/zoom/manifest.json"
     }
   },
   "Productivity": {
     "github.com/containerpak/anki": {
       "name": "Anki",
-      "description": "",
-      "branch": "",
+      "description": "Study with spaced-repetition flash cards.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.08.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/anki/manifest.json"
     },
     "github.com/containerpak/calibre": {
       "name": "calibre",
-      "description": "",
-      "branch": "",
+      "description": "Manage and read your e-book library.",
+      "branch": "main",
+      "ref": "main",
+      "version": "9.13.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/calibre/manifest.json"
     },
     "github.com/containerpak/foliate": {
       "name": "Foliate",
-      "description": "",
-      "branch": "",
+      "description": "Read EPUB, MOBI, AZW and comic book files.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.3.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/foliate/manifest.json"
     },
     "github.com/containerpak/joplin": {
       "name": "Joplin",
-      "description": "",
-      "branch": "",
+      "description": "Write notes and synchronize them across your devices.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.6.15",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/joplin/manifest.json"
     },
     "github.com/containerpak/kate": {
       "name": "Kate",
-      "description": "",
-      "branch": "",
+      "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.04.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/kate/manifest.json"
     },
     "github.com/containerpak/libreoffice": {
       "name": "LibreOffice",
-      "description": "",
-      "branch": "",
+      "description": "The free and open source office suite.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.2.4.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/libreoffice/manifest.json"
     },
     "github.com/containerpak/logseq": {
       "name": "Logseq",
-      "description": "",
-      "branch": "",
+      "description": "Connect notes and knowledge in an outliner.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.0.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/logseq/manifest.json"
     },
     "github.com/containerpak/nextcloud": {
-      "name": "Nextcloud",
-      "description": "Desktop",
-      "branch": "",
+      "name": "Nextcloud Desktop",
+      "description": "Synchronize files with a Nextcloud server.",
+      "branch": "main",
+      "ref": "main",
+      "version": "34.0.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/nextcloud/manifest.json"
     },
     "github.com/containerpak/obsidian": {
       "name": "Obsidian",
-      "description": "",
-      "branch": "",
+      "description": "A private and flexible knowledge base for your notes.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.13.7",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/obsidian/manifest.json"
     },
     "github.com/containerpak/onlyoffice": {
-      "name": "ONLYOFFICE",
-      "description": "Desktop",
-      "branch": "Editors",
+      "name": "ONLYOFFICE Desktop Editors",
+      "description": "Edit text documents, spreadsheets, presentations, forms and PDF files.",
+      "branch": "main",
+      "ref": "main",
+      "version": "9.4.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/onlyoffice/manifest.json"
     },
     "github.com/containerpak/pdfarranger": {
-      "name": "PDF",
-      "description": "Arranger",
-      "branch": "",
+      "name": "PDF Arranger",
+      "description": "Merge, split, rotate and rearrange PDF documents.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.13.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/pdfarranger/manifest.json"
     },
     "github.com/containerpak/proton-mail": {
-      "name": "Proton",
-      "description": "Mail",
-      "branch": "",
+      "name": "Proton Mail",
+      "description": "Use Proton Mail from its official desktop application.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.13.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/proton-mail/manifest.json"
     },
     "github.com/containerpak/standard-notes": {
-      "name": "Standard",
-      "description": "Notes",
-      "branch": "",
+      "name": "Standard Notes",
+      "description": "Write and sync encrypted notes.",
+      "branch": "main",
+      "ref": "main",
+      "version": "3.201.21",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/standard-notes/manifest.json"
     },
     "github.com/containerpak/wps-office": {
-      "name": "WPS",
-      "description": "Office",
-      "branch": "",
+      "name": "WPS Office",
+      "description": "Create and edit documents, spreadsheets and presentations.",
+      "branch": "main",
+      "ref": "main",
+      "version": "11.1.0.11723",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/wps-office/manifest.json"
     },
     "github.com/containerpak/xournalpp": {
       "name": "Xournal++",
-      "description": "",
-      "branch": "",
+      "description": "Take handwritten notes and annotate PDF documents.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.3.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/xournalpp/manifest.json"
     }
   },
   "Security": {
     "github.com/containerpak/bitwarden": {
       "name": "Bitwarden",
-      "description": "",
-      "branch": "",
+      "description": "Securely manage passwords, passkeys and sensitive information.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2026.7.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Security/github/com/containerpak/bitwarden/manifest.json"
     },
     "github.com/containerpak/keepassxc": {
       "name": "KeePassXC",
-      "description": "",
-      "branch": "",
+      "description": "Store passwords in an encrypted local database.",
+      "branch": "main",
+      "ref": "main",
+      "version": "2.7.12",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Security/github/com/containerpak/keepassxc/manifest.json"
     }
   },
   "System": {
     "github.com/containerpak/cpu-x": {
       "name": "CPU-X",
-      "description": "",
-      "branch": "",
+      "description": "Inspect processor, motherboard, memory and system information.",
+      "branch": "main",
+      "ref": "main",
+      "version": "5.4.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/cpu-x/manifest.json"
     },
     "github.com/containerpak/goverlay": {
       "name": "Goverlay",
-      "description": "",
-      "branch": "",
+      "description": "Configure MangoHud, vkBasalt and related gaming overlays.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.8.11",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/goverlay/manifest.json"
     },
     "github.com/containerpak/kitty": {
       "name": "Kitty",
-      "description": "",
-      "branch": "",
+      "description": "A GPU-accelerated terminal emulator with tabs and layouts.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.45.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/kitty/manifest.json"
     },
     "github.com/containerpak/openrgb": {
       "name": "OpenRGB",
-      "description": "",
-      "branch": "",
+      "description": "Control RGB lighting without manufacturer software.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.0rc3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/openrgb/manifest.json"
     },
     "github.com/containerpak/solaar": {
       "name": "Solaar",
-      "description": "",
-      "branch": "",
+      "description": "Manage Logitech keyboards, mice and trackpads.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.1.19",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/solaar/manifest.json"
     },
     "github.com/containerpak/virt-manager": {
-      "name": "Virtual",
-      "description": "Machine",
-      "branch": "Manager",
+      "name": "Virtual Machine Manager",
+      "description": "Manage virtual machines through libvirt.",
+      "branch": "main",
+      "ref": "main",
+      "version": "5.1.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/virt-manager/manifest.json"
     }
   },
   "Utilities": {
+    "github.com/bottlesdevs/bottles-next": {
+      "name": "Bottles Next",
+      "description": "The next generation of Bottles for running Windows software on Linux.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.1.0",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles-next/manifest.json"
+    },
     "github.com/bottlesdevs/bottles": {
       "name": "Bottles",
-      "description": "",
-      "branch": "",
+      "description": "Run and manage Windows applications on Linux with Wine and Proton.",
+      "branch": "main",
+      "ref": "main",
+      "version": "66.7",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles/manifest.json"
-    },
-    "github.com/bottlesdevs/bottles-next": {
-      "name": "Bottles",
-      "description": "Next",
-      "branch": "",
-      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles-next/manifest.json"
     },
     "github.com/containerpak/peazip": {
       "name": "PeaZip",
-      "description": "",
-      "branch": "",
+      "description": "Archive manager and file compression utility.",
+      "branch": "main",
+      "ref": "main",
+      "version": "11.1.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/containerpak/peazip/manifest.json"
     }
   },
   "Web": {
     "github.com/containerpak/brave": {
       "name": "Brave",
-      "description": "",
-      "branch": "",
+      "description": "Fast browser with privacy protections.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.93.136",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/brave/manifest.json"
     },
     "github.com/containerpak/chrome": {
-      "name": "Google",
-      "description": "Chrome",
-      "branch": "",
+      "name": "Google Chrome",
+      "description": "The Google Chrome web browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "151.0.7922.169-1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/chrome/manifest.json"
     },
     "github.com/containerpak/edge": {
-      "name": "Microsoft",
-      "description": "Edge",
-      "branch": "",
+      "name": "Microsoft Edge",
+      "description": "Microsoft Edge web browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "151.0.4129.78-1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/edge/manifest.json"
     },
     "github.com/containerpak/firefox": {
       "name": "Firefox",
-      "description": "",
-      "branch": "",
+      "description": "Fast, private and safe web browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "153.0.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/firefox/manifest.json"
     },
     "github.com/containerpak/floorp": {
       "name": "Floorp",
-      "description": "",
-      "branch": "",
+      "description": "Browse the web with a customizable Firefox-based browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "12.16.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/floorp/manifest.json"
     },
     "github.com/containerpak/librewolf": {
       "name": "LibreWolf",
-      "description": "",
-      "branch": "",
+      "description": "Privacy-focused Firefox-based web browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "153.0.1-1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/librewolf/manifest.json"
     },
     "github.com/containerpak/opera-gx": {
-      "name": "Opera",
-      "description": "GX",
-      "branch": "",
+      "name": "Opera GX",
+      "description": "Browse the web with gaming-focused controls and integrations.",
+      "branch": "main",
+      "ref": "main",
+      "version": "134.0.5954.55",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/opera-gx/manifest.json"
     },
     "github.com/containerpak/opera": {
       "name": "Opera",
-      "description": "",
-      "branch": "",
+      "description": "Browse the web with built-in privacy and productivity tools.",
+      "branch": "main",
+      "ref": "main",
+      "version": "133.0.5932.60",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/opera/manifest.json"
     },
     "github.com/containerpak/tor-browser-launcher": {
-      "name": "Tor",
-      "description": "Browser",
-      "branch": "Launcher",
+      "name": "Tor Browser Launcher",
+      "description": "Download, verify and launch Tor Browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "0.3.9",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/tor-browser-launcher/manifest.json"
     },
     "github.com/containerpak/waterfox": {
       "name": "Waterfox",
-      "description": "",
-      "branch": "",
+      "description": "Browse the web with a privacy-focused Firefox-based browser.",
+      "branch": "main",
+      "ref": "main",
+      "version": "6.6.17",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/waterfox/manifest.json"
     },
     "github.com/containerpak/zen": {
-      "name": "Zen",
-      "description": "Browser",
-      "branch": "",
+      "name": "Zen Browser",
+      "description": "A fast, privacy-focused browser built on Firefox.",
+      "branch": "main",
+      "ref": "main",
+      "version": "1.21.13b",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/zen/manifest.json"
     }
   }

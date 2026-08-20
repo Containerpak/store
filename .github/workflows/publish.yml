@@ -137,13 +137,13 @@ jobs:
               origin="${origin%/manifest.json}"
               origin="${origin//github\/com/github.com}"
 
-              read -r name description branch commit release < <(
-                  jq -r '.name, .description,
-                              (.branch  // ""),
-                              (.commit  // ""),
-                              (.release // "")' "$mf"
-              )
-              version=${branch:-${commit:-${release:-""}}}
+              name=$(jq -r '.name' "$mf")
+              description=$(jq -r '.description' "$mf")
+              ref=$(jq -r '.branch // .commit // .release' "$mf")
+
+              repo_path=${origin#github.com/}
+              cpak_url="https://raw.githubusercontent.com/${repo_path}/${ref}/cpak.json"
+              package_version=$(curl -fsSL --retry 3 --retry-all-errors "$cpak_url" | jq -er '.version')
 
               manifest_url="${RAW_BASE}/${DEFAULT_REF}/${rel_path}"
 
@@ -153,9 +153,10 @@ jobs:
                       --arg orig  "$origin" \
                       --arg name  "$name" \
                       --arg desc  "$description" \
-                      --arg ver   "$version" \
+                      --arg ref   "$ref" \
+                      --arg ver   "$package_version" \
                       --arg url   "$manifest_url" \
-                      '{($cat): {($orig): {name:$name, description:$desc, branch:$ver, manifest:$url}}}'
+                      '{($cat): {($orig): {name:$name, description:$desc, branch:$ref, ref:$ref, version:$ver, manifest:$url}}}'
               )")
           done < <(git ls-files -z -- 'categories/*/**/manifest.json')
 
