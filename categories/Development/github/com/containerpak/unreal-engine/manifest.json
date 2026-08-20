@@ -1,5 +1,5 @@
 {
   "name": "Unreal Engine",
   "description": "Create games and interactive experiences with Unreal Engine.",
-  "branch": "main"
+  "release": "v5.8.0"
 }

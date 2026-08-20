@@ -281,8 +281,8 @@
     "github.com/containerpak/unreal-engine": {
       "name": "Unreal Engine",
       "description": "Create games and interactive experiences with Unreal Engine.",
-      "branch": "main",
-      "ref": "main",
+      "branch": "v5.8.0",
+      "ref": "v5.8.0",
       "version": "5.8.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/unreal-engine/manifest.json"
     },
