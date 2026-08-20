@@ -1,7 +1,24 @@
 {
   "anki": {"repository": "ankitects/anki"},
+  "android-studio": {
+    "kind": "android-studio",
+    "page_url": "https://developer.android.com/studio"
+  },
+  "anydesk": {
+    "kind": "debian-repository",
+    "packages_url": "https://deb.anydesk.com/dists/all/main/binary-amd64/Packages.gz",
+    "base_url": "https://deb.anydesk.com",
+    "package": "anydesk"
+  },
   "arduino-ide": {"repository": "arduino/arduino-ide"},
   "bambu-studio": {"repository": "bambulab/BambuStudio"},
+  "bitwarden": {
+    "kind": "github-release-asset",
+    "repository": "bitwarden/clients",
+    "tag_prefix": "desktop-v",
+    "asset_pattern": "^Bitwarden-{version}-x86_64\\.AppImage$",
+    "arguments": {"APP_SHA256": "SHA256"}
+  },
   "brave": {
     "kind": "debian-repository",
     "packages_url": "https://brave-browser-apt-release.s3.brave.com/dists/stable/main/binary-amd64/Packages.gz",
@@ -11,6 +28,12 @@
   "calibre": {"repository": "kovidgoyal/calibre"},
   "cemu": {"repository": "cemu-project/Cemu"},
   "chiaki-ng": {"repository": "streetpea/chiaki-ng"},
+  "claude-desktop": {
+    "kind": "debian-repository",
+    "packages_url": "https://downloads.claude.ai/claude-desktop/apt/stable/dists/stable/main/binary-amd64/Packages.gz",
+    "base_url": "https://downloads.claude.ai/claude-desktop/apt/stable",
+    "package": "claude-desktop"
+  },
   "chrome": {
     "kind": "debian-repository",
     "packages_url": "https://dl.google.com/linux/chrome/deb/dists/stable/main/binary-amd64/Packages.gz",
@@ -31,6 +54,15 @@
     "version_path": ["LATEST_FIREFOX_VERSION"],
     "unchecked": true
   },
+  "flameshot": {
+    "kind": "github-release-asset",
+    "repository": "flameshot-org/flameshot",
+    "asset_pattern": "^flameshot-.*-artifact-debian-12-amd64\\.zip$",
+    "arguments": {
+      "FLAMESHOT_URL": "url",
+      "FLAMESHOT_SHA256": "SHA256"
+    }
+  },
   "flycast": {"repository": "flyinghead/flycast"},
   "free-download-manager": {
     "kind": "direct-deb",
@@ -47,9 +79,37 @@
   "heroic": {"repository": "Heroic-Games-Launcher/HeroicGamesLauncher"},
   "jan": {"repository": "janhq/jan"},
   "joplin": {"repository": "laurent22/joplin"},
+  "kate": {
+    "kind": "kde-source",
+    "page_url": "https://download.kde.org/stable/release-service/",
+    "source_url_template": "https://download.kde.org/stable/release-service/{version}/src/kate-{version}.tar.xz",
+    "arguments": {
+      "KATE_URL": "url",
+      "KATE_SHA256": "SHA256"
+    }
+  },
   "keepassxc": {"repository": "keepassxreboot/keepassxc"},
+  "kooha": {
+    "kind": "github-release-asset",
+    "repository": "SeaDve/Kooha",
+    "asset_pattern": "^kooha-{version}\\.tar\\.xz$",
+    "arguments": {
+      "KOOHA_URL": "url",
+      "KOOHA_SHA256": "SHA256"
+    }
+  },
   "localsend": {"repository": "localsend/localsend"},
+  "librewolf": {
+    "kind": "html-asset",
+    "page_url": "https://librewolf.net/installation/linux/",
+    "link_pattern": "(?P<url>https://dl\\.librewolf\\.net/librewolf/(?P<version>[0-9][0-9A-Za-z.-]*)/librewolf-[^\\\"< ]+-linux-x86_64-appimage\\.AppImage)",
+    "checksum_suffix": ".sha256sum"
+  },
   "logseq": {"repository": "logseq/logseq"},
+  "lm-studio": {
+    "kind": "direct-deb",
+    "latest_url": "https://lmstudio.ai/download/latest/linux/x64?format=deb"
+  },
   "mattermost": {"repository": "mattermost/desktop"},
   "minecraft": {
     "kind": "direct-deb",
@@ -87,6 +147,18 @@
     "package": "opera-gx-stable"
   },
   "obsidian": {"repository": "obsidianmd/obsidian-releases"},
+  "onlyoffice": {
+    "kind": "debian-archive",
+    "packages_url": "https://download.onlyoffice.com/repo/debian/dists/squeeze/main/binary-amd64/Packages.gz",
+    "base_url": "https://download.onlyoffice.com/repo/debian",
+    "package": "onlyoffice-desktopeditors",
+    "strip_debian_revision": true,
+    "source_url_template": "http://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors-{version}-x64.tar.xz",
+    "arguments": {
+      "ONLYOFFICE_URL": "url",
+      "ONLYOFFICE_SHA256": "SHA256"
+    }
+  },
   "orcaslicer": {"repository": "OrcaSlicer/OrcaSlicer"},
   "parsec": {
     "kind": "direct-deb",
@@ -97,15 +169,56 @@
   "pcsx2": {"repository": "PCSX2/pcsx2"},
   "peazip": {"repository": "peazip/PeaZip"},
   "podman-desktop": {"repository": "podman-desktop/podman-desktop"},
+  "postman": {
+    "kind": "direct-archive",
+    "latest_url": "https://dl.pstmn.io/download/latest/linux64",
+    "version_member": "/app/resources/app/package.json",
+    "version_path": ["version"],
+    "name_template": "postman-linux-x64-{version}.tar.gz"
+  },
   "ppsspp": {"repository": "hrydgard/ppsspp"},
   "protonup-qt": {"repository": "DavidoTek/ProtonUp-Qt"},
+  "proton-mail": {
+    "kind": "direct-deb-add",
+    "latest_url": "https://proton.me/download/mail/linux/ProtonMail-desktop-beta.deb"
+  },
   "protontricks": {
     "kind": "pypi",
     "package": "protontricks"
   },
+  "rambox": {"repository": "ramboxapp/download"},
   "rmg": {"repository": "Rosalie241/RMG"},
   "runelite": {"repository": "runelite/launcher"},
   "rustdesk": {"repository": "rustdesk/rustdesk"},
+  "scummvm": {
+    "kind": "github-tag",
+    "repository": "scummvm/scummvm",
+    "latest_release": true,
+    "arguments": {"SCUMMVM_COMMIT": "commit"}
+  },
+  "sdk-go": {
+    "kind": "go-release",
+    "arguments": {
+      "GO_VERSION": "cpak_version",
+      "GO_SHA256_AMD64": "sha256_amd64",
+      "GO_SHA256_ARM64": "sha256_arm64"
+    }
+  },
+  "sdk-node-lts": {
+    "kind": "node-lts",
+    "arguments": {
+      "NODE_VERSION": "cpak_version",
+      "NODE_SHA256_AMD64": "sha256_amd64",
+      "NODE_SHA256_ARM64": "sha256_arm64"
+    }
+  },
+  "sdk-zig": {
+    "kind": "zig-stable",
+    "arguments": {
+      "ZIG_VERSION": "cpak_version",
+      "ZIG_SHA256": "SHA256"
+    }
+  },
   "shotcut": {"repository": "mltframework/shotcut"},
   "signal-desktop": {
     "kind": "debian-repository",
@@ -138,10 +251,38 @@
   "supermodel": {"repository": "trzy/Supermodel"},
   "teams-for-linux": {"repository": "IsmaelMartinez/teams-for-linux"},
   "telegram": {"repository": "telegramdesktop/tdesktop"},
+  "thunderbird": {
+    "kind": "json-release",
+    "version_url": "https://product-details.mozilla.org/1.0/thunderbird_versions.json",
+    "version_path": ["LATEST_THUNDERBIRD_VERSION"]
+  },
   "umu": {"repository": "Open-Wine-Components/umu-launcher"},
+  "upscaler": {
+    "kind": "gitlab-tag",
+    "tags_url": "https://gitlab.gnome.org/api/v4/projects/World%2FUpscaler/repository/tags?order_by=updated&sort=desc&per_page=5",
+    "source_match": "gitlab.gnome.org/World/Upscaler/-/archive/",
+    "source_url_template": "https://gitlab.gnome.org/World/Upscaler/-/archive/{commit}/Upscaler-{commit}.tar.gz"
+  },
   "upscayl": {"repository": "upscayl/upscayl"},
   "vacuumtube": {"repository": "shy1132/VacuumTube"},
   "vesktop": {"repository": "Vencord/Vesktop"},
+  "video-trimmer": {
+    "kind": "gitlab-tag",
+    "tags_url": "https://gitlab.gnome.org/api/v4/projects/YaLTeR%2Fvideo-trimmer/repository/tags?order_by=updated&sort=desc&per_page=5",
+    "strip_prefix": "v",
+    "source_match": "gitlab.gnome.org/YaLTeR/video-trimmer/-/archive/",
+    "source_url_template": "https://gitlab.gnome.org/YaLTeR/video-trimmer/-/archive/{commit}/video-trimmer-{commit}.tar.gz"
+  },
+  "vokoscreenng": {
+    "kind": "github-tag",
+    "repository": "vkohaupt/vokoscreenNG",
+    "strip_prefix": "",
+    "source_url_template": "https://github.com/vkohaupt/vokoscreenNG/archive/{commit}.tar.gz",
+    "arguments": {
+      "VOKOSCREEN_URL": "url",
+      "VOKOSCREEN_SHA256": "SHA256"
+    }
+  },
   "vscodium": {"repository": "VSCodium/vscodium"},
   "vscode": {
     "kind": "direct-deb",

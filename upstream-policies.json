@@ -1,0 +1,63 @@
+{
+  "platform-package": [
+    "audacity",
+    "blender",
+    "cpu-x",
+    "dolphin-emu",
+    "filezilla",
+    "foliate",
+    "fontforge",
+    "geany",
+    "gimp",
+    "handbrake",
+    "inkscape",
+    "kdenlive",
+    "kitty",
+    "kodi",
+    "krita",
+    "libreoffice",
+    "lutris",
+    "mame",
+    "mpv",
+    "obs-studio",
+    "pdfarranger",
+    "prism-launcher",
+    "qbittorrent",
+    "remmina",
+    "retroarch",
+    "scrcpy",
+    "sdk-cli",
+    "sdk-java",
+    "sdk-lua",
+    "sdk-mingw",
+    "sdk-native",
+    "sdk-php",
+    "sdk-python",
+    "sdk-qt",
+    "sdk-ruby",
+    "sdk-scm",
+    "sdk-vala",
+    "sdk-vulkan",
+    "solaar",
+    "strawberry",
+    "transmission",
+    "virt-manager",
+    "vlc",
+    "xournalpp"
+  ],
+  "package-updater": [
+    "claude-code",
+    "codex",
+    "pnpm"
+  ],
+  "runtime-resolved": [
+    "jdownloader",
+    "sdk-rust",
+    "tor-browser-launcher"
+  ],
+  "external-gate": {
+    "acronis-connect": "The vendor publishes a versioned download without a machine-readable release index.",
+    "unreal-engine": "The Epic registry requires an EULA-linked token with read:packages.",
+    "wps-office": "The vendor publishes a versioned download without a stable machine-readable release index."
+  }
+}

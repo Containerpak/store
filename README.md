@@ -39,23 +39,30 @@ following steps will be taken:
 
 ## Upstream Updates
 
-Official packages rebuild on a schedule with fresh platform layers. Packages
-that download versioned GitHub release assets or use a Debian package repository
-are also tracked by `upstreams.json`. The store checks them every day, updates
-the version and source metadata together, then lets the package repository build
-and verify the new image. Pre-release tracking must be enabled explicitly.
+Every official package has one update policy. `upstreams.json` tracks versioned
+sources through GitHub and GitLab releases, Debian repositories, PyPI, published
+JSON indexes, checked vendor downloads and release pages. The daily workflow
+updates the package version, URL, checksum and size together, then lets the
+package repository build and sign the new image. Pre-release tracking must be
+enabled explicitly.
 
-Stable Debian download endpoints can use the `direct-deb` provider. It first
-compares the redirect target and content size, then downloads the package only
-when either changed. The version is read from the package control data before
-the checksum, size and URL are committed.
+Packages installed from the cpak Ubuntu platform rebuild when its locked snapshot
+changes. A package may instead own its updater, resolve its current toolchain at
+build time or update itself at runtime. `upstream-policies.json` records these
+cases and fails the tests if an official Store entry has no policy. Vendor sources
+that require private credentials or expose no machine-readable index are listed
+there as external gates.
 
-Add a package to `upstreams.json` only when its `Containerfile` uses a checked
-GitHub release asset and the version in `cpak.json` matches that release. Sources
-from a Debian repository must name its `Packages.gz` index, repository root and
-package. In that case the published filename, size and SHA256 are read directly
-from the signed repository metadata. Sources with another release API need their
-own updater in the package repository.
+Stable Debian endpoints use `direct-deb`; Debian repositories use their
+`Packages.gz` metadata without downloading the package during a normal check.
+Direct archives are downloaded only after their redirect target or size changes.
+The updater also understands source arguments for multi-architecture SDKs, release
+assets with vendor-specific names and checked archives published outside GitHub.
+
+Add a package to `upstreams.json` when its source can be checked without guessing.
+Use the package repository for an updater only when the source needs package-specific
+logic. Add every other official package to exactly one group in
+`upstream-policies.json`.
 
 Run the same checks locally before changing an upstream definition:
 
