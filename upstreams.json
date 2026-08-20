@@ -1,0 +1,168 @@
+{
+  "anki": {"repository": "ankitects/anki"},
+  "arduino-ide": {"repository": "arduino/arduino-ide"},
+  "bambu-studio": {"repository": "bambulab/BambuStudio"},
+  "brave": {
+    "kind": "debian-repository",
+    "packages_url": "https://brave-browser-apt-release.s3.brave.com/dists/stable/main/binary-amd64/Packages.gz",
+    "base_url": "https://brave-browser-apt-release.s3.brave.com",
+    "package": "brave-browser"
+  },
+  "calibre": {"repository": "kovidgoyal/calibre"},
+  "cemu": {"repository": "cemu-project/Cemu"},
+  "chiaki-ng": {"repository": "streetpea/chiaki-ng"},
+  "chrome": {
+    "kind": "debian-repository",
+    "packages_url": "https://dl.google.com/linux/chrome/deb/dists/stable/main/binary-amd64/Packages.gz",
+    "base_url": "https://dl.google.com/linux/chrome/deb",
+    "package": "google-chrome-stable"
+  },
+  "darktable": {"repository": "darktable-org/darktable", "strip_prefix": "release-"},
+  "dbeaver": {"repository": "dbeaver/dbeaver"},
+  "dbgate": {"repository": "dbgate/dbgate"},
+  "discord": {
+    "kind": "direct-deb",
+    "latest_url": "https://discord.com/api/download?platform=linux&format=deb"
+  },
+  "floorp": {"repository": "Floorp-Projects/Floorp"},
+  "firefox": {
+    "kind": "json-release",
+    "version_url": "https://product-details.mozilla.org/1.0/firefox_versions.json",
+    "version_path": ["LATEST_FIREFOX_VERSION"],
+    "unchecked": true
+  },
+  "flycast": {"repository": "flyinghead/flycast"},
+  "free-download-manager": {
+    "kind": "direct-deb",
+    "latest_url": "https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb",
+    "keep_latest_url": true,
+    "keep_name": true
+  },
+  "freecad": {"repository": "FreeCAD/FreeCAD"},
+  "freetube": {"repository": "FreeTubeApp/FreeTube", "allow_prerelease": true},
+  "github-desktop": {"repository": "shiftkey/desktop", "strip_prefix": "release-"},
+  "gitnuro": {"repository": "JetpackDuba/Gitnuro"},
+  "godot": {"repository": "godotengine/godot", "strip_suffix": "-stable"},
+  "goverlay": {"repository": "benjamimgois/goverlay"},
+  "heroic": {"repository": "Heroic-Games-Launcher/HeroicGamesLauncher"},
+  "jan": {"repository": "janhq/jan"},
+  "joplin": {"repository": "laurent22/joplin"},
+  "keepassxc": {"repository": "keepassxreboot/keepassxc"},
+  "localsend": {"repository": "localsend/localsend"},
+  "logseq": {"repository": "logseq/logseq"},
+  "mattermost": {"repository": "mattermost/desktop"},
+  "minecraft": {
+    "kind": "direct-deb",
+    "latest_url": "https://launcher.mojang.com/download/Minecraft.deb",
+    "keep_latest_url": true,
+    "keep_name": true
+  },
+  "edge": {
+    "kind": "debian-repository",
+    "packages_url": "https://packages.microsoft.com/repos/edge/dists/stable/main/binary-amd64/Packages.gz",
+    "base_url": "https://packages.microsoft.com/repos/edge",
+    "package": "microsoft-edge-stable"
+  },
+  "element": {"repository": "element-hq/element-desktop"},
+  "melonds": {"repository": "melonDS-emu/melonDS"},
+  "modrinth": {"repository": "modrinth/code"},
+  "moonlight": {"repository": "moonlight-stream/moonlight-qt"},
+  "nextcloud": {"repository": "nextcloud-releases/desktop"},
+  "openrgb": {"repository": "CalcProgrammer1/OpenRGB", "strip_prefix": "release_candidate_"},
+  "openclaw": {
+    "kind": "json-release",
+    "version_url": "https://registry.npmjs.org/openclaw/latest",
+    "version_path": ["version"]
+  },
+  "opera": {
+    "kind": "debian-repository",
+    "packages_url": "https://deb.opera.com/opera-stable/dists/stable/non-free/binary-amd64/Packages.gz",
+    "base_url": "https://deb.opera.com/opera-stable",
+    "package": "opera-stable"
+  },
+  "opera-gx": {
+    "kind": "debian-repository",
+    "packages_url": "https://deb.opera.com/opera-gx-stable/dists/stable/non-free/binary-amd64/Packages.gz",
+    "base_url": "https://deb.opera.com/opera-gx-stable",
+    "package": "opera-gx-stable"
+  },
+  "obsidian": {"repository": "obsidianmd/obsidian-releases"},
+  "orcaslicer": {"repository": "OrcaSlicer/OrcaSlicer"},
+  "parsec": {
+    "kind": "direct-deb",
+    "latest_url": "https://builds.parsecgaming.com/package/parsec-linux.deb",
+    "keep_latest_url": true,
+    "keep_name": true
+  },
+  "pcsx2": {"repository": "PCSX2/pcsx2"},
+  "peazip": {"repository": "peazip/PeaZip"},
+  "podman-desktop": {"repository": "podman-desktop/podman-desktop"},
+  "ppsspp": {"repository": "hrydgard/ppsspp"},
+  "protonup-qt": {"repository": "DavidoTek/ProtonUp-Qt"},
+  "protontricks": {
+    "kind": "pypi",
+    "package": "protontricks"
+  },
+  "rmg": {"repository": "Rosalie241/RMG"},
+  "runelite": {"repository": "runelite/launcher"},
+  "rustdesk": {"repository": "rustdesk/rustdesk"},
+  "shotcut": {"repository": "mltframework/shotcut"},
+  "signal-desktop": {
+    "kind": "debian-repository",
+    "packages_url": "https://updates.signal.org/desktop/apt/dists/xenial/main/binary-amd64/Packages.gz",
+    "base_url": "https://updates.signal.org/desktop/apt",
+    "package": "signal-desktop"
+  },
+  "standard-notes": {"repository": "standardnotes/app", "strip_prefix": "@standardnotes/desktop@"},
+  "slack": {
+    "kind": "json-release",
+    "version_url": "https://slack.com/api/desktop.latestRelease?arch=x64&variant=deb",
+    "version_path": ["version"]
+  },
+  "spotify": {
+    "kind": "debian-repository",
+    "packages_url": "https://repository.spotify.com/dists/stable/non-free/binary-amd64/Packages.gz",
+    "base_url": "https://repository.spotify.com",
+    "package": "spotify-client",
+    "strip_epoch": true
+  },
+  "steam": {
+    "kind": "debian-repository",
+    "packages_url": "https://repo.steampowered.com/steam/dists/stable/steam/binary-amd64/Packages.gz",
+    "base_url": "https://repo.steampowered.com/steam",
+    "package": "steam-launcher",
+    "strip_epoch": true
+  },
+  "stremio": {"repository": "Stremio/stremio-shell"},
+  "sunshine": {"repository": "LizardByte/Sunshine"},
+  "supermodel": {"repository": "trzy/Supermodel"},
+  "teams-for-linux": {"repository": "IsmaelMartinez/teams-for-linux"},
+  "telegram": {"repository": "telegramdesktop/tdesktop"},
+  "umu": {"repository": "Open-Wine-Components/umu-launcher"},
+  "upscayl": {"repository": "upscayl/upscayl"},
+  "vacuumtube": {"repository": "shy1132/VacuumTube"},
+  "vesktop": {"repository": "Vencord/Vesktop"},
+  "vscodium": {"repository": "VSCodium/vscodium"},
+  "vscode": {
+    "kind": "direct-deb",
+    "latest_url": "https://update.code.visualstudio.com/latest/linux-deb-x64/stable"
+  },
+  "waterfox": {"repository": "BrowserWorks/Waterfox"},
+  "vivaldi": {
+    "kind": "debian-repository",
+    "packages_url": "https://repo.vivaldi.com/stable/deb/dists/stable/main/binary-amd64/Packages.gz",
+    "base_url": "https://repo.vivaldi.com/stable/deb",
+    "package": "vivaldi-stable",
+    "strip_debian_revision": true
+  },
+  "xemu": {"repository": "xemu-project/xemu"},
+  "zapzap": {"repository": "rafatosta/zapzap"},
+  "zed": {"repository": "zed-industries/zed"},
+  "zen": {"repository": "zen-browser/desktop"},
+  "zoom": {
+    "kind": "direct-deb",
+    "latest_url": "https://zoom.us/client/latest/zoom_amd64.deb",
+    "keep_latest_url": true,
+    "keep_name": true
+  }
+}

@@ -37,6 +37,33 @@ following steps will be taken:
 2. After a successful publish, maintainers merge the PR into the main branch,
    making the new package available to all users.
 
+## Upstream Updates
+
+Official packages rebuild on a schedule with fresh platform layers. Packages
+that download versioned GitHub release assets or use a Debian package repository
+are also tracked by `upstreams.json`. The store checks them every day, updates
+the version and source metadata together, then lets the package repository build
+and verify the new image. Pre-release tracking must be enabled explicitly.
+
+Stable Debian download endpoints can use the `direct-deb` provider. It first
+compares the redirect target and content size, then downloads the package only
+when either changed. The version is read from the package control data before
+the checksum, size and URL are committed.
+
+Add a package to `upstreams.json` only when its `Containerfile` uses a checked
+GitHub release asset and the version in `cpak.json` matches that release. Sources
+from a Debian repository must name its `Packages.gz` index, repository root and
+package. In that case the published filename, size and SHA256 are read directly
+from the signed repository metadata. Sources with another release API need their
+own updater in the package repository.
+
+Run the same checks locally before changing an upstream definition:
+
+```bash
+python3 scripts/test_upstream.py
+GH_TOKEN="$(gh auth token)" python3 scripts/upstream.py plan
+```
+
 ## Managing Federated Stores
 
 ### `cpak store-add <uri>`

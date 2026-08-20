@@ -1,0 +1,75 @@
+name: Update package upstreams
+
+on:
+  schedule:
+    - cron: "7 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: update-package-upstreams
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - id: plan
+        env:
+          GH_TOKEN: ${{ secrets.CPAK_UPDATER_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 scripts/test_upstream.py
+          matrix=$(python3 scripts/upstream.py plan)
+          echo "matrix=${matrix}" >> "$GITHUB_OUTPUT"
+          echo "count=$(jq '.include | length' <<< "$matrix")" >> "$GITHUB_OUTPUT"
+
+  update:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: Containerpak/${{ matrix.name }}
+          token: ${{ secrets.CPAK_UPDATER_TOKEN }}
+          path: package
+
+      - name: Update package
+        env:
+          GH_TOKEN: ${{ secrets.CPAK_UPDATER_TOKEN }}
+          PACKAGE: ${{ matrix.name }}
+          VERSION: ${{ matrix.version }}
+        run: |
+          set -euo pipefail
+          python3 scripts/upstream.py update --path package --name "$PACKAGE" --version "$VERSION"
+          git -C package diff --check
+          if git -C package diff --exit-code --quiet; then
+            echo "Updater produced no changes for ${PACKAGE} ${VERSION}" >&2
+            exit 1
+          fi
+
+      - name: Publish update
+        env:
+          PACKAGE: ${{ matrix.name }}
+          VERSION: ${{ matrix.version }}
+        run: |
+          set -euo pipefail
+          git -C package config user.name cpak-updater
+          git -C package config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git -C package add Containerfile cpak.json
+          git -C package commit -m "chore: update ${PACKAGE} to ${VERSION}"
+          git -C package push origin HEAD:main
