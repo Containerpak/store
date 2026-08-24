@@ -1,0 +1,5 @@
+{
+    "name": ".NET SDK",
+    "description": "The .NET SDK for cpak provides the C# compiler, runtime, MSBuild, NuGet and project templates.",
+    "branch": "main"
+}

@@ -357,6 +357,26 @@ class UpstreamTest(unittest.TestCase):
         self.assertEqual(source["cpak_version"], "2.0")
         self.assertEqual(source["sha256_arm64"], "b" * 64)
 
+    def test_dotnet_release_reads_both_linux_architectures(self):
+        metadata = {
+            "latest-sdk": "9.0.999",
+            "releases": [
+                {
+                    "sdk": {
+                        "version": "9.0.999",
+                        "files": [
+                            {"rid": "linux-x64", "hash": "a" * 128},
+                            {"rid": "linux-arm64", "hash": "b" * 128},
+                        ],
+                    }
+                }
+            ],
+        }
+        with mock.patch.object(upstream, "request_json", return_value=metadata):
+            source = upstream.dotnet_release()
+        self.assertEqual(source["cpak_version"], "9.0.999")
+        self.assertEqual(source["sha512_arm64"], "b" * 128)
+
     def test_node_lts_reads_published_checksums(self):
         releases = [{"version": "v2.0", "lts": "Sample"}]
         checksums = (

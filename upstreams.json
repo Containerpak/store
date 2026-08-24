@@ -196,6 +196,14 @@
     "latest_release": true,
     "arguments": {"SCUMMVM_COMMIT": "commit"}
   },
+  "sdk-dotnet": {
+    "kind": "dotnet-release",
+    "arguments": {
+      "DOTNET_VERSION": "cpak_version",
+      "DOTNET_SHA512_AMD64": "sha512_amd64",
+      "DOTNET_SHA512_ARM64": "sha512_arm64"
+    }
+  },
   "sdk-go": {
     "kind": "go-release",
     "arguments": {

@@ -5,7 +5,7 @@
       "description": "Anthropic's coding agent for the terminal, with every cpak SDK available as an addon.",
       "branch": "main",
       "ref": "main",
-      "version": "2.1.237",
+      "version": "2.1.241",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-code/manifest.json"
     },
     "github.com/containerpak/claude-desktop": {
@@ -13,7 +13,7 @@
       "description": "Use Claude, Claude Code and local desktop features from one application.",
       "branch": "main",
       "ref": "main",
-      "version": "1.26832.0",
+      "version": "1.34493.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/claude-desktop/manifest.json"
     },
     "github.com/containerpak/codex": {
@@ -21,7 +21,7 @@
       "description": "OpenAI's coding agent for the terminal, with every cpak SDK available as an addon.",
       "branch": "main",
       "ref": "main",
-      "version": "0.148.0",
+      "version": "0.149.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/AI-ML/github/com/containerpak/codex/manifest.json"
     },
     "github.com/containerpak/jan": {
@@ -55,7 +55,7 @@
       "description": "Work with SQL databases through a universal desktop client.",
       "branch": "main",
       "ref": "main",
-      "version": "26.1.4",
+      "version": "26.1.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbeaver/manifest.json"
     },
     "github.com/containerpak/dbgate": {
@@ -63,7 +63,7 @@
       "description": "Manage SQL and NoSQL databases with one desktop client.",
       "branch": "main",
       "ref": "main",
-      "version": "7.2.0",
+      "version": "7.2.5",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Database/github/com/containerpak/dbgate/manifest.json"
     }
   },
@@ -123,7 +123,7 @@
       "description": "Create 2D and 3D games.",
       "branch": "main",
       "ref": "main",
-      "version": "4.7.1",
+      "version": "4.7.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/godot/manifest.json"
     },
     "github.com/containerpak/pnpm": {
@@ -131,7 +131,7 @@
       "description": "Fast package manager with selectable Node.js runtimes.",
       "branch": "main",
       "ref": "main",
-      "version": "11.21.0",
+      "version": "11.23.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/pnpm/manifest.json"
     },
     "github.com/containerpak/podman-desktop": {
@@ -147,7 +147,7 @@
       "description": "Build, test and document APIs.",
       "branch": "main",
       "ref": "main",
-      "version": "12.23.7",
+      "version": "12.24.6",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/postman/manifest.json"
     },
     "github.com/containerpak/sdk-cli": {
@@ -158,12 +158,20 @@
       "version": "1.0.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-cli/manifest.json"
     },
+    "github.com/containerpak/sdk-dotnet": {
+      "name": ".NET SDK",
+      "description": "The .NET SDK for cpak provides the C# compiler, runtime, MSBuild, NuGet and project templates.",
+      "branch": "main",
+      "ref": "main",
+      "version": "9.0.317",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-dotnet/manifest.json"
+    },
     "github.com/containerpak/sdk-go": {
       "name": "Go SDK",
       "description": "The Go SDK for cpak provides tools and libraries to develop applications in Go.",
       "branch": "main",
       "ref": "main",
-      "version": "1.26.5",
+      "version": "1.27.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/sdk-go/manifest.json"
     },
     "github.com/containerpak/sdk-java": {
@@ -291,7 +299,7 @@
       "description": "Free, lightweight, extensible code editor for building virtually everything.",
       "branch": "main",
       "ref": "main",
-      "version": "1.132.0-1785860022",
+      "version": "1.134.0-1787078834",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/vscode/manifest.json"
     },
     "github.com/containerpak/vscodium": {
@@ -307,7 +315,7 @@
       "description": "Edit code with a high-performance collaborative editor.",
       "branch": "main",
       "ref": "main",
-      "version": "1.15.0",
+      "version": "1.16.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/zed/manifest.json"
     }
   },
@@ -381,7 +389,7 @@
       "description": "Install and play Minecraft: Java Edition.",
       "branch": "main",
       "ref": "main",
-      "version": "1.0.1221",
+      "version": "2.1.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/minecraft/manifest.json"
     },
     "github.com/containerpak/modrinth": {
@@ -389,7 +397,7 @@
       "description": "Install and manage Minecraft content.",
       "branch": "main",
       "ref": "main",
-      "version": "0.17.5",
+      "version": "0.18.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/modrinth/manifest.json"
     },
     "github.com/containerpak/moonlight": {
@@ -689,7 +697,7 @@
       "description": "Online music streaming service",
       "branch": "main",
       "ref": "main",
-      "version": "1.2.92.147.g5b8f9367",
+      "version": "1.2.95.453.g0eeebbed",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Multimedia/github/com/containerpak/spotify/manifest.json"
     },
     "github.com/containerpak/strawberry": {
@@ -755,7 +763,7 @@
       "description": "Connect to remote computers and provide remote support.",
       "branch": "main",
       "ref": "main",
-      "version": "8.0.3",
+      "version": "8.0.4",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/anydesk/manifest.json"
     },
     "github.com/containerpak/discord": {
@@ -763,7 +771,7 @@
       "description": "Talk, chat and hang out with communities and friends.",
       "branch": "main",
       "ref": "main",
-      "version": "1.0.153",
+      "version": "1.0.154",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/discord/manifest.json"
     },
     "github.com/containerpak/element": {
@@ -787,7 +795,7 @@
       "description": "Organize and accelerate file downloads.",
       "branch": "main",
       "ref": "main",
-      "version": "6.34.2.6926",
+      "version": "6.34.4.6974",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/free-download-manager/manifest.json"
     },
     "github.com/containerpak/jdownloader": {
@@ -803,7 +811,7 @@
       "description": "Share files securely with nearby devices over the local network.",
       "branch": "main",
       "ref": "main",
-      "version": "1.18.0",
+      "version": "1.18.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/localsend/manifest.json"
     },
     "github.com/containerpak/mattermost": {
@@ -811,7 +819,7 @@
       "description": "Use Mattermost workspaces from the desktop.",
       "branch": "main",
       "ref": "main",
-      "version": "6.2.2",
+      "version": "6.3.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/mattermost/manifest.json"
     },
     "github.com/containerpak/parsec": {
@@ -867,7 +875,7 @@
       "description": "Send private messages and make secure calls.",
       "branch": "main",
       "ref": "main",
-      "version": "8.22.0",
+      "version": "8.24.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/signal-desktop/manifest.json"
     },
     "github.com/containerpak/slack": {
@@ -875,7 +883,7 @@
       "description": "Communicate with your team and organization.",
       "branch": "main",
       "ref": "main",
-      "version": "4.51.180",
+      "version": "4.51.191",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/slack/manifest.json"
     },
     "github.com/containerpak/teams-for-linux": {
@@ -883,7 +891,7 @@
       "description": "Use Microsoft Teams from a Linux desktop client.",
       "branch": "main",
       "ref": "main",
-      "version": "2.14.1",
+      "version": "2.17.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/teams-for-linux/manifest.json"
     },
     "github.com/containerpak/telegram": {
@@ -891,7 +899,7 @@
       "description": "Use Telegram messages, calls and file sharing from the desktop.",
       "branch": "main",
       "ref": "main",
-      "version": "7.0.9",
+      "version": "7.1.1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/telegram/manifest.json"
     },
     "github.com/containerpak/thunderbird": {
@@ -899,7 +907,7 @@
       "description": "Manage email, calendars and contacts.",
       "branch": "main",
       "ref": "main",
-      "version": "stable",
+      "version": "154.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/thunderbird/manifest.json"
     },
     "github.com/containerpak/transmission": {
@@ -915,7 +923,7 @@
       "description": "Desktop Discord client with Vencord support.",
       "branch": "main",
       "ref": "main",
-      "version": "1.6.5",
+      "version": "1.6.7",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/vesktop/manifest.json"
     },
     "github.com/containerpak/vivaldi": {
@@ -923,7 +931,7 @@
       "description": "Browse the web with a customizable browser.",
       "branch": "main",
       "ref": "main",
-      "version": "8.1.4087.64",
+      "version": "8.1.4087.70",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Networking/github/com/containerpak/vivaldi/manifest.json"
     },
     "github.com/containerpak/zapzap": {
@@ -973,7 +981,7 @@
       "description": "Write notes and synchronize them across your devices.",
       "branch": "main",
       "ref": "main",
-      "version": "3.6.15",
+      "version": "3.6.16",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/joplin/manifest.json"
     },
     "github.com/containerpak/kate": {
@@ -981,7 +989,7 @@
       "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
       "branch": "main",
       "ref": "main",
-      "version": "26.04.2",
+      "version": "26.08.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/kate/manifest.json"
     },
     "github.com/containerpak/libreoffice": {
@@ -1005,7 +1013,7 @@
       "description": "Synchronize files with a Nextcloud server.",
       "branch": "main",
       "ref": "main",
-      "version": "34.0.1",
+      "version": "34.0.2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/nextcloud/manifest.json"
     },
     "github.com/containerpak/obsidian": {
@@ -1045,7 +1053,7 @@
       "description": "Write and sync encrypted notes.",
       "branch": "main",
       "ref": "main",
-      "version": "3.201.21",
+      "version": "3.202.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Productivity/github/com/containerpak/standard-notes/manifest.json"
     },
     "github.com/containerpak/wps-office": {
@@ -1071,7 +1079,7 @@
       "description": "Securely manage passwords, passkeys and sensitive information.",
       "branch": "main",
       "ref": "main",
-      "version": "2026.7.0",
+      "version": "2026.8.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Security/github/com/containerpak/bitwarden/manifest.json"
     },
     "github.com/containerpak/keepassxc": {
@@ -1097,7 +1105,7 @@
       "description": "Configure MangoHud, vkBasalt and related gaming overlays.",
       "branch": "main",
       "ref": "main",
-      "version": "1.8.11",
+      "version": "1.9.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/System/github/com/containerpak/goverlay/manifest.json"
     },
     "github.com/containerpak/kitty": {
@@ -1147,7 +1155,7 @@
       "description": "Run and manage Windows applications on Linux with Wine and Proton.",
       "branch": "main",
       "ref": "main",
-      "version": "66.7",
+      "version": "66.8",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles/manifest.json"
     },
     "github.com/containerpak/peazip": {
@@ -1155,7 +1163,7 @@
       "description": "Archive manager and file compression utility.",
       "branch": "main",
       "ref": "main",
-      "version": "11.1.0",
+      "version": "11.2.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/containerpak/peazip/manifest.json"
     }
   },
@@ -1165,7 +1173,7 @@
       "description": "Fast browser with privacy protections.",
       "branch": "main",
       "ref": "main",
-      "version": "1.93.136",
+      "version": "1.93.138",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/brave/manifest.json"
     },
     "github.com/containerpak/chrome": {
@@ -1173,7 +1181,7 @@
       "description": "The Google Chrome web browser.",
       "branch": "main",
       "ref": "main",
-      "version": "151.0.7922.169-1",
+      "version": "151.0.7922.173-1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/chrome/manifest.json"
     },
     "github.com/containerpak/edge": {
@@ -1181,7 +1189,7 @@
       "description": "Microsoft Edge web browser.",
       "branch": "main",
       "ref": "main",
-      "version": "151.0.4129.78-1",
+      "version": "151.0.4129.101-1",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/edge/manifest.json"
     },
     "github.com/containerpak/firefox": {
@@ -1189,7 +1197,7 @@
       "description": "Fast, private and safe web browser.",
       "branch": "main",
       "ref": "main",
-      "version": "153.0.3",
+      "version": "154.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/firefox/manifest.json"
     },
     "github.com/containerpak/floorp": {
@@ -1197,7 +1205,7 @@
       "description": "Browse the web with a customizable Firefox-based browser.",
       "branch": "main",
       "ref": "main",
-      "version": "12.16.4",
+      "version": "12.17.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/floorp/manifest.json"
     },
     "github.com/containerpak/librewolf": {
@@ -1205,7 +1213,7 @@
       "description": "Privacy-focused Firefox-based web browser.",
       "branch": "main",
       "ref": "main",
-      "version": "153.0.1-1",
+      "version": "154.0-2",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/librewolf/manifest.json"
     },
     "github.com/containerpak/opera-gx": {
@@ -1221,7 +1229,7 @@
       "description": "Browse the web with built-in privacy and productivity tools.",
       "branch": "main",
       "ref": "main",
-      "version": "133.0.5932.60",
+      "version": "135.0.5973.41",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/opera/manifest.json"
     },
     "github.com/containerpak/tor-browser-launcher": {
@@ -1237,7 +1245,7 @@
       "description": "Browse the web with a privacy-focused Firefox-based browser.",
       "branch": "main",
       "ref": "main",
-      "version": "6.6.17",
+      "version": "6.7.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/waterfox/manifest.json"
     },
     "github.com/containerpak/zen": {
@@ -1245,7 +1253,7 @@
       "description": "A fast, privacy-focused browser built on Firefox.",
       "branch": "main",
       "ref": "main",
-      "version": "1.21.13b",
+      "version": "1.21.15b",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Web/github/com/containerpak/zen/manifest.json"
     }
   }
