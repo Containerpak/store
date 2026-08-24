@@ -37,6 +37,7 @@ PACKAGE_SOURCE_KINDS = {
 }
 ARGUMENT_SOURCE_KINDS = {
     "debian-archive",
+    "dotnet-release",
     "github-release-asset",
     "github-tag",
     "go-release",
@@ -339,6 +340,35 @@ def go_release():
     }
 
 
+def dotnet_release():
+    metadata = request_json(
+        "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/9.0/releases.json",
+        None,
+    )
+    version = metadata["latest-sdk"]
+    release = next(
+        (item for item in metadata["releases"] if item.get("sdk", {}).get("version") == version),
+        None,
+    )
+    if release is None:
+        raise RuntimeError(f".NET release metadata is missing SDK {version}")
+    files = {
+        item["rid"]: item
+        for item in release["sdk"]["files"]
+        if item["rid"] in ("linux-x64", "linux-arm64")
+    }
+    if set(files) != {"linux-x64", "linux-arm64"}:
+        raise RuntimeError(".NET is missing a Linux SDK archive")
+    for item in files.values():
+        if not re.fullmatch(r"[0-9a-f]{128}", item["hash"]):
+            raise RuntimeError(f".NET returned an invalid SHA-512 for {item['rid']}")
+    return {
+        "cpak_version": version,
+        "sha512_amd64": files["linux-x64"]["hash"],
+        "sha512_arm64": files["linux-arm64"]["hash"],
+    }
+
+
 def node_lts():
     releases = request_json("https://nodejs.org/dist/index.json", None)
     release = next((item for item in releases if item.get("lts")), None)
@@ -625,6 +655,8 @@ def upstream(settings, token, manifest=None, containerfile=None):
         return github_tag(settings, token)
     if settings.get("kind") == "go-release":
         return go_release()
+    if settings.get("kind") == "dotnet-release":
+        return dotnet_release()
     if settings.get("kind") == "node-lts":
         return node_lts()
     if settings.get("kind") == "zig-stable":
