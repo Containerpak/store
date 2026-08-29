@@ -1,5 +1,6 @@
 {
   "name": "Fedora Linux",
   "description": "Fedora Linux 44 for persistent development environments.",
-  "branch": "main"
+  "release": "v44",
+  "architectures": ["amd64"]
 }

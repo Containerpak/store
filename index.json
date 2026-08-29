@@ -289,7 +289,7 @@
     "github.com/containerpak/unreal-engine": {
       "name": "Unreal Engine",
       "description": "Create games and interactive experiences with Unreal Engine.",
-      "branch": "982837116a4b234acffefda504fc912691299ea3",
+      "commit": "982837116a4b234acffefda504fc912691299ea3",
       "ref": "982837116a4b234acffefda504fc912691299ea3",
       "version": "5.8.0",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/unreal-engine/manifest.json"
@@ -323,8 +323,8 @@
     "github.com/containerpak/archlinux": {
       "name": "Arch Linux",
       "description": "Arch Linux rolling for persistent development environments.",
-      "branch": "main",
-      "ref": "main",
+      "release": "v2026.08.29",
+      "ref": "v2026.08.29",
       "version": "rolling",
       "architectures": ["amd64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/archlinux/manifest.json"
@@ -332,37 +332,37 @@
     "github.com/containerpak/debian": {
       "name": "Debian",
       "description": "Debian 13 for persistent development environments.",
-      "branch": "main",
-      "ref": "main",
+      "release": "v13",
+      "ref": "v13",
       "version": "13",
-      "architectures": ["amd64", "arm64"],
+      "architectures": ["amd64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/debian/manifest.json"
     },
     "github.com/containerpak/fedora": {
       "name": "Fedora Linux",
       "description": "Fedora Linux 44 for persistent development environments.",
-      "branch": "main",
-      "ref": "main",
+      "release": "v44",
+      "ref": "v44",
       "version": "44",
-      "architectures": ["amd64", "arm64"],
+      "architectures": ["amd64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/fedora/manifest.json"
     },
     "github.com/containerpak/opensuse": {
       "name": "openSUSE Tumbleweed",
       "description": "openSUSE Tumbleweed for persistent development environments.",
-      "branch": "main",
-      "ref": "main",
+      "release": "v2026.08.29",
+      "ref": "v2026.08.29",
       "version": "tumbleweed",
-      "architectures": ["amd64", "arm64"],
+      "architectures": ["amd64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/opensuse/manifest.json"
     },
     "github.com/containerpak/ubuntu": {
       "name": "Ubuntu",
       "description": "Ubuntu 26.04 LTS for persistent development environments.",
-      "branch": "main",
-      "ref": "main",
+      "release": "v26.04",
+      "ref": "v26.04",
       "version": "26.04",
-      "architectures": ["amd64", "arm64"],
+      "architectures": ["amd64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/ubuntu/manifest.json"
     }
   },

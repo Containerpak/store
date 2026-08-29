@@ -139,7 +139,9 @@ jobs:
 
               name=$(jq -r '.name' "$mf")
               description=$(jq -r '.description' "$mf")
+              ref_type=$(jq -r 'if .branch then "branch" elif .commit then "commit" else "release" end' "$mf")
               ref=$(jq -r '.branch // .commit // .release' "$mf")
+              architectures=$(jq -c '.architectures // null' "$mf")
 
               repo_path=${origin#github.com/}
               cpak_url="https://raw.githubusercontent.com/${repo_path}/${ref}/cpak.json"
@@ -153,10 +155,12 @@ jobs:
                       --arg orig  "$origin" \
                       --arg name  "$name" \
                       --arg desc  "$description" \
+                      --arg type  "$ref_type" \
                       --arg ref   "$ref" \
                       --arg ver   "$package_version" \
                       --arg url   "$manifest_url" \
-                      '{($cat): {($orig): {name:$name, description:$desc, branch:$ref, ref:$ref, version:$ver, manifest:$url}}}'
+                      --argjson architectures "$architectures" \
+                      '{($cat): {($orig): ({name:$name, description:$desc, ref:$ref, version:$ver, manifest:$url} + {($type):$ref} + if $architectures == null then {} else {architectures:$architectures} end)}}'
               )")
           done < <(git ls-files -z -- 'categories/*/**/manifest.json')
 

@@ -1,5 +1,6 @@
 {
   "name": "openSUSE Tumbleweed",
   "description": "openSUSE Tumbleweed for persistent development environments.",
-  "branch": "main"
+  "release": "v2026.08.29",
+  "architectures": ["amd64"]
 }
