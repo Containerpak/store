@@ -326,6 +326,7 @@
       "branch": "main",
       "ref": "main",
       "version": "rolling",
+      "architectures": ["amd64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/archlinux/manifest.json"
     },
     "github.com/containerpak/debian": {
@@ -334,6 +335,7 @@
       "branch": "main",
       "ref": "main",
       "version": "13",
+      "architectures": ["amd64", "arm64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/debian/manifest.json"
     },
     "github.com/containerpak/fedora": {
@@ -342,6 +344,7 @@
       "branch": "main",
       "ref": "main",
       "version": "44",
+      "architectures": ["amd64", "arm64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/fedora/manifest.json"
     },
     "github.com/containerpak/opensuse": {
@@ -350,6 +353,7 @@
       "branch": "main",
       "ref": "main",
       "version": "tumbleweed",
+      "architectures": ["amd64", "arm64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/opensuse/manifest.json"
     },
     "github.com/containerpak/ubuntu": {
@@ -358,6 +362,7 @@
       "branch": "main",
       "ref": "main",
       "version": "26.04",
+      "architectures": ["amd64", "arm64"],
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/ubuntu/manifest.json"
     }
   },
