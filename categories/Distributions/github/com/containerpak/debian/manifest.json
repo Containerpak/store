@@ -1,0 +1,5 @@
+{
+  "name": "Debian",
+  "description": "Debian 13 for persistent development environments.",
+  "branch": "main"
+}

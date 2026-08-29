@@ -1,4 +1,11 @@
 {
+  "distribution-image": [
+    "archlinux",
+    "debian",
+    "fedora",
+    "opensuse",
+    "ubuntu"
+  ],
   "platform-package": [
     "audacity",
     "blender",

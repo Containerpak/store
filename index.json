@@ -319,6 +319,48 @@
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Development/github/com/containerpak/zed/manifest.json"
     }
   },
+  "Distributions": {
+    "github.com/containerpak/archlinux": {
+      "name": "Arch Linux",
+      "description": "Arch Linux rolling for persistent development environments.",
+      "branch": "main",
+      "ref": "main",
+      "version": "rolling",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/archlinux/manifest.json"
+    },
+    "github.com/containerpak/debian": {
+      "name": "Debian",
+      "description": "Debian 13 for persistent development environments.",
+      "branch": "main",
+      "ref": "main",
+      "version": "13",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/debian/manifest.json"
+    },
+    "github.com/containerpak/fedora": {
+      "name": "Fedora Linux",
+      "description": "Fedora Linux 44 for persistent development environments.",
+      "branch": "main",
+      "ref": "main",
+      "version": "44",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/fedora/manifest.json"
+    },
+    "github.com/containerpak/opensuse": {
+      "name": "openSUSE Tumbleweed",
+      "description": "openSUSE Tumbleweed for persistent development environments.",
+      "branch": "main",
+      "ref": "main",
+      "version": "tumbleweed",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/opensuse/manifest.json"
+    },
+    "github.com/containerpak/ubuntu": {
+      "name": "Ubuntu",
+      "description": "Ubuntu 26.04 LTS for persistent development environments.",
+      "branch": "main",
+      "ref": "main",
+      "version": "26.04",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Distributions/github/com/containerpak/ubuntu/manifest.json"
+    }
+  },
   "Games": {
     "github.com/containerpak/cemu": {
       "name": "Cemu",

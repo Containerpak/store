@@ -1,0 +1,5 @@
+{
+  "name": "Ubuntu",
+  "description": "Ubuntu 26.04 LTS for persistent development environments.",
+  "branch": "main"
+}

@@ -11,6 +11,10 @@
         "icon": "desktop_windows",
         "color": "#64748B"
     },
+    "Distributions": {
+        "icon": "deployed_code",
+        "color": "#2563EB"
+    },
     "Development": {
         "icon": "code",
         "color": "#38A169"

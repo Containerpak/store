@@ -53,6 +53,9 @@ cases and fails the tests if an official Store entry has no policy. Vendor sourc
 that require private credentials or expose no machine-readable index are listed
 there as external gates.
 
+Distribution environments rebuild from the pinned base-image pipeline in
+`Containerpak/images`.
+
 Stable Debian endpoints use `direct-deb`; Debian repositories use their
 `Packages.gz` metadata without downloading the package during a normal check.
 Direct archives are downloaded only after their redirect target or size changes.
