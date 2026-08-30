@@ -1189,6 +1189,14 @@
     }
   },
   "Utilities": {
+    "github.com/atomsdevs/atoms": {
+      "name": "Atoms",
+      "description": "Create and use persistent Linux environments from a terminal-first desktop interface.",
+      "release": "v2.0.0",
+      "ref": "v2.0.0",
+      "version": "2.0.0",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/atomsdevs/atoms/manifest.json"
+    },
     "github.com/bottlesdevs/bottles-next": {
       "name": "Bottles Next",
       "description": "The next generation of Bottles for running Windows software on Linux.",
