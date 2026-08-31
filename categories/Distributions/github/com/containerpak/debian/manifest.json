@@ -1,6 +1,6 @@
 {
   "name": "Debian",
   "description": "Debian 13 for persistent development environments.",
-  "release": "v13",
+  "release": "v13.0.1",
   "architectures": ["amd64"]
 }

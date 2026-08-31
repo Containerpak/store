@@ -1,6 +1,6 @@
 {
   "name": "Ubuntu",
   "description": "Ubuntu 26.04 LTS for persistent development environments.",
-  "release": "v26.04",
+  "release": "v26.04.1",
   "architectures": ["amd64"]
 }
