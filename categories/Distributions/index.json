@@ -1,7 +1,1 @@
-[
-  "github.com/containerpak/archlinux",
-  "github.com/containerpak/debian",
-  "github.com/containerpak/fedora",
-  "github.com/containerpak/opensuse",
-  "github.com/containerpak/ubuntu"
-]
+["github.com/containerpak/archlinux","github.com/containerpak/debian","github.com/containerpak/fedora","github.com/containerpak/opensuse","github.com/containerpak/ubuntu"]
