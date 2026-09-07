@@ -1219,7 +1219,7 @@
       "name": "Bottles",
       "description": "Run and manage Windows applications on Linux with Wine and Proton.",
       "ref": "main",
-      "version": "66.11",
+      "version": "67.3",
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Utilities/github/com/bottlesdevs/bottles/manifest.json",
       "branch": "main"
     },
