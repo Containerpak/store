@@ -19,8 +19,8 @@ jobs:
             -o SHA256SUMS \
             https://github.com/Containerpak/cpak/releases/download/continuous/SHA256SUMS
           sha256sum -c --ignore-missing SHA256SUMS
-          mv cpak-linux-amd64 cpak
-          chmod +x cpak
+          sudo install -Dm755 cpak-linux-amd64 /usr/local/bin/cpak
+          sudo cpak system setup
 
       - name: Find changed manifests
         id: changes
@@ -98,7 +98,7 @@ jobs:
             [ -n "$RELEASE" ] && args+=(--release "$RELEASE")
 
             echo "→ Installing via cpak: cpak install $origin ${args[*]}"
-            ./cpak install "$origin" "${args[@]}"
+            cpak install "$origin" "${args[@]}"
           done
 
       - name: Comment on success
