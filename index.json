@@ -377,6 +377,14 @@
     }
   },
   "Games": {
+    "github.com/catpieleaf/stud": {
+      "name": "Stud",
+      "description": "An Unofficial Open-Source Roblox Launcher for Linux",
+      "ref": "main",
+      "version": "1.1.2",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/catpieleaf/stud/manifest.json",
+      "branch": "main"
+    },
     "github.com/containerpak/cemu": {
       "name": "Cemu",
       "description": "Play Wii U games with an open source emulator.",
