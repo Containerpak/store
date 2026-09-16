@@ -425,6 +425,14 @@
       "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/heroic/manifest.json",
       "branch": "main"
     },
+    "github.com/containerpak/lepton": {
+      "name": "Lepton",
+      "description": "Valve's compatibility tool that runs Android games from Steam on Linux, as an addon for Steam.",
+      "ref": "main",
+      "version": "3.0.1",
+      "manifest": "https://raw.githubusercontent.com/Containerpak/store/main/categories/Games/github/com/containerpak/lepton/manifest.json",
+      "branch": "main"
+    },
     "github.com/containerpak/lutris": {
       "name": "Lutris",
       "description": "Lutris is a video game preservation platform aiming to keep your video game collection up and running for the years to come.",
