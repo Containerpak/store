@@ -23,8 +23,9 @@ jobs:
             -o cpak-storaged-linux-amd64 \
             https://github.com/Containerpak/cpak/releases/download/continuous/cpak-storaged-linux-amd64
           sha256sum -c --ignore-missing SHA256SUMS
-          sudo chown root:root /usr/local /usr/local/bin
-          sudo chmod 0755 /usr/local /usr/local/bin
+          sudo mkdir -p /usr/local/bin /usr/local/share/dbus-1/system-services /usr/local/share/wayland-sessions
+          sudo chown root:root /usr/local /usr/local/bin /usr/local/share /usr/local/share/dbus-1 /usr/local/share/dbus-1/system-services /usr/local/share/wayland-sessions
+          sudo chmod 0755 /usr/local /usr/local/bin /usr/local/share /usr/local/share/dbus-1 /usr/local/share/dbus-1/system-services /usr/local/share/wayland-sessions
           sudo install -Dm755 cpak-linux-amd64 /usr/local/bin/cpak
           sudo install -Dm755 cpak-storaged-linux-amd64 /usr/local/bin/cpak-storaged
           sudo cpak system setup
