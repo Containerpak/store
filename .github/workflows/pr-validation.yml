@@ -19,7 +19,12 @@ jobs:
             -o SHA256SUMS \
             https://github.com/Containerpak/cpak/releases/download/continuous/SHA256SUMS
           sha256sum -c --ignore-missing SHA256SUMS
+          curl -sSL \
+            -o cpak-storaged-linux-amd64 \
+            https://github.com/Containerpak/cpak/releases/download/continuous/cpak-storaged-linux-amd64
+          sha256sum -c --ignore-missing SHA256SUMS
           sudo install -Dm755 cpak-linux-amd64 /usr/local/bin/cpak
+          sudo install -Dm755 cpak-storaged-linux-amd64 /usr/local/bin/cpak-storaged
           sudo cpak system setup
 
       - name: Find changed manifests
