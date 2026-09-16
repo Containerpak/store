@@ -31,7 +31,6 @@ jobs:
           sudo mkdir -p /etc/dbus-1/system.d /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
           sudo chown root:root /etc/dbus-1 /etc/dbus-1/system.d /usr/share/polkit-1 /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
           sudo chmod 0755 /etc/dbus-1 /etc/dbus-1/system.d /usr/share/polkit-1 /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
-          stat -c '%U %G %a %n' /usr/local /usr/local/bin /usr/local/share /usr/local/share/dbus-1 /usr/local/share/dbus-1/system-services /usr/local/share/wayland-sessions /etc/dbus-1 /etc/dbus-1/system.d /usr/share/polkit-1 /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
           sudo cpak system setup
 
       - name: Find changed manifests
@@ -110,7 +109,7 @@ jobs:
             [ -n "$RELEASE" ] && args+=(--release "$RELEASE")
 
             echo "→ Installing via cpak: cpak install $origin ${args[*]}"
-            cpak install "$origin" "${args[@]}"
+            cpak install "$origin" "${args[@]}" --yes
           done
 
       - name: Comment on success
