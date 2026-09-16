@@ -1,0 +1,5 @@
+{
+  "name": "Lepton",
+  "description": "Valve's compatibility tool that runs Android games from Steam on Linux, as an addon for Steam.",
+  "branch": "main"
+}
