@@ -28,6 +28,10 @@ jobs:
           sudo chmod 0755 /usr/local /usr/local/bin /usr/local/share /usr/local/share/dbus-1 /usr/local/share/dbus-1/system-services /usr/local/share/wayland-sessions
           sudo install -Dm755 cpak-linux-amd64 /usr/local/bin/cpak
           sudo install -Dm755 cpak-storaged-linux-amd64 /usr/local/bin/cpak-storaged
+          sudo mkdir -p /etc/dbus-1/system.d /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
+          sudo chown root:root /etc/dbus-1 /etc/dbus-1/system.d /usr/share/polkit-1 /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
+          sudo chmod 0755 /etc/dbus-1 /etc/dbus-1/system.d /usr/share/polkit-1 /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
+          stat -c '%U %G %a %n' /usr/local /usr/local/bin /usr/local/share /usr/local/share/dbus-1 /usr/local/share/dbus-1/system-services /usr/local/share/wayland-sessions /etc/dbus-1 /etc/dbus-1/system.d /usr/share/polkit-1 /usr/share/polkit-1/actions /etc/systemd/system /var/lib/cpak
           sudo cpak system setup
 
       - name: Find changed manifests
